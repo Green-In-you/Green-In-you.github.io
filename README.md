@@ -1,2 +1,2 @@
 # GreenInYou.in
-A static website for GreenInYou
+A static website for GreenInYou (work in progress)
