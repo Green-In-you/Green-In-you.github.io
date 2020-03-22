@@ -1,0 +1,15 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+headerurl: "../assets/img/blog_header.png"
+---
+<h3>this da blog page.</h3>
+
+<div>
+    <ul>
+        {% for post in site.posts %}
+        <li><a href="{{post.url | prepend: site.url}}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
