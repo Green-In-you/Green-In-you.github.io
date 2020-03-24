@@ -18,6 +18,7 @@
                 {% for item in site.data.pagelist.docs %}
                 <li><a href="{{ item.url | prepend: site.url }}">{{ item.title }}</a></li>
                 {% endfor %}
+                <li><a href={{site.url}}>🔍</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
