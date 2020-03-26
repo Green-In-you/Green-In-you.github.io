@@ -124,7 +124,7 @@ aside {
         .nav > li > a,
         .nav > li > a:focus {
             &:hover {
-                color: white;
+                color: $theme-green;
             }
         }
         &.affix {
@@ -173,7 +173,7 @@ aside {
                 font-weight: 700;
                 font-size: 13px;
                 &:hover {
-                    color: $theme-primary;
+                    color: $theme-green;
                 }
             }
             &.active {
@@ -200,9 +200,17 @@ aside {
         }
         .nav > li > a#notactive {
             color: $theme-dark;
+            &:hover {
+                color: $theme-green;
+            }
+        }
+        .nav > li > a:focus {	
+            &:hover {	
+                color: white;	
+            }	
         }
         &.affix {
-            background-color: white;
+            background-color: transparent;
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
                 color: $theme-primary;
