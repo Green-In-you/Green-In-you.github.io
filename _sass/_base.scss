@@ -27,6 +27,10 @@ a {
     }
 }
 
+a.active {
+    color: #A1BFAD;
+}
+
 h1,
 h2,
 h3,
@@ -70,8 +74,8 @@ aside {
 // Navigation
 
 .navbar-default {
-    background-color: white;
-    border-color: rgba($theme-dark, .5);
+    background-color: transparent;
+    border-color: transparent;
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
@@ -91,7 +95,6 @@ aside {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
-                color: $theme-dark;
                 &:hover {
                     color: $theme-primary;
                 }
@@ -110,7 +113,7 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        border-color: transparent;
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
             &:hover,
@@ -120,7 +123,6 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
             &:hover {
                 color: white;
             }
@@ -149,8 +151,8 @@ aside {
 
 // different navbar for thesalepage
 .navbar-thesale {
-    background-color: white;
-    border-color: rgba($theme-dark, .5);
+    background-color: transparent;
+    border-color: transparent;
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
@@ -170,16 +172,25 @@ aside {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
-                color: $theme-dark;
                 &:hover {
                     color: $theme-primary;
+                }
+            }
+            &.active {
+                > a,
+                > a:focus {
+                    color: $theme-primary !important;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: transparent;
+                    }
                 }
             }
         }
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        border-color: transparent;
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
             &:hover,
@@ -187,12 +198,8 @@ aside {
                 color: white;
             }
         }
-        .nav > li > a,
-        .nav > li > a:focus {
-            color: rgba(white, .7);
-            &:hover {
-                color: white;
-            }
+        .nav > li > a#notactive {
+            color: $theme-dark;
         }
         &.affix {
             background-color: white;
