@@ -1,3 +1,7 @@
+@font-face { font-family: "BetterTogether"; src: url("../fonts/BetterTogetherScript.ttf"); }
+
+@font-face { font-family: "Montserrat"; src: url("../fonts/Montserrat-Bold.otf"); }
+
 html, body { height: 100%; width: 100%; }
 
 body { font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
