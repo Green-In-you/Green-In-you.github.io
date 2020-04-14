@@ -1,6 +1,8 @@
 @font-face { font-family: "BetterTogether"; src: url("../fonts/BetterTogetherScript.ttf"); }
 
-@font-face { font-family: "Montserrat"; src: url("../fonts/Montserrat-Bold.otf"); }
+@font-face { font-family: "Montserrat-Bold"; src: url("../fonts/Montserrat-Bold.otf"); }
+
+@font-face { font-family: "AvenirNext"; src: url("../fonts/AvenirNext.ttc"); }
 
 html, body { height: 100%; width: 100%; }
 
