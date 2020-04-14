@@ -8,6 +8,13 @@ body {
     @include serif-font;
 }
 
+p {
+    font-size:18px;
+    font-weight:300;
+    color:#4B4B4B;
+}
+
+/*
 hr {
     border-color: $theme-primary;
     border-width: 3px;
@@ -40,12 +47,6 @@ h6 {
     @include sans-serif-font;
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
 .bg-primary {
     background-color: $theme-primary;
 }
@@ -70,6 +71,7 @@ aside {
 .no-padding {
     padding: 0;
 }
+*/
 
 // Navigation
 
@@ -291,9 +293,21 @@ header {
 // Sections
 
 .section-heading {
-    margin-top: 0;
+    font-family: Montserrat-Bold;
+    font-size: 24px;
+    line-height: 44px;
+    color:#4B4B4B;
 }
 
+.section-heading-letterspaced {
+    font-family: Montserrat-Bold;
+    font-size: 22px;
+    letter-spacing: 2.8px;
+    line-height: 34px;
+    color: #4B4B4B;
+}
+
+/*
 .service-box {
     max-width: 400px;
     margin: 50px auto 0;
@@ -376,7 +390,21 @@ header {
     padding-right:0;
     padding-left:0;
 }
-
+*/
+.btn-green {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 0;
+    border-color: transparent;
+    background-color:#A1BFAD;
+    color: white;
+    letter-spacing: 1px;
+    font-family: Montserrat-Bold;
+    font-weight: 400;
+    height: 50px;
+    width: 150px;
+}
+/*
 // Button Styles
 .btn-default {
     @include button-variant($theme-dark, white, white);
@@ -397,12 +425,16 @@ header {
 .btn-xl {
     padding: 15px 30px;
 }
+*/
 
 // Contact
+
+/*
 #contact .fa {
     color: $theme-dark;
     font-size: 4em;
 }
+*/
 
 // Extras
 // -- Highlight Color Customization
@@ -416,6 +448,14 @@ header {
     color: white;
     text-shadow: none;
     background: $theme-dark;
+}
+
+.img-shadow-left {
+    box-shadow: -70px 5px 0px 15px #F7FCF9;
+}
+
+.img-shadow-right {
+    box-shadow: 75px -10px 0px 35px #F7FCF9;
 }
 
 img::selection {
