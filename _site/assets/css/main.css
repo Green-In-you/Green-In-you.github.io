@@ -8,7 +8,7 @@ html, body { height: 100%; width: 100%; }
 
 body { font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
 
-p { font-size: 18px; font-weight: 300; color: #4B4B4B; }
+p { font-size: 18px; font-weight: 300; color: #707070; }
 
 /* hr { border-color: $theme-primary; border-width: 3px; max-width: 50px; } hr.light { border-color: white; } a { @include transition-all; color: $theme-primary; &:hover, &:focus { color: darken($theme-primary, 10%); } } a.active { color: #A1BFAD; } h1, h2, h3, h4, h5, h6 { @include sans-serif-font; } .bg-primary { background-color: $theme-primary; } .bg-dark { background-color: $theme-dark; color: white; } .text-faded { color: rgba(white, .7); } section { padding: 100px 0; } aside { padding: 50px 0; } .no-padding { padding: 0; } */
 .navbar-default { background-color: transparent; border-color: transparent; font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; -webkit-transition: all 0.35s; -moz-transition: all 0.35s; transition: all 0.35s; }
