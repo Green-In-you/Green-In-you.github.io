@@ -101,6 +101,8 @@ header .header-content .header-content-inner p { font-weight: 300; color: rgba(2
 
 .img-shadow-howitworks { box-shadow: 30px -30px 0px 8px #F7FCF9; }
 
+.img-shadow-aboutus { box-shadow: -70px 5px 0px 30px #F7FCF9; }
+
 img::selection { color: white; background: transparent; }
 
 img::-moz-selection { color: white; background: transparent; }
