@@ -14,6 +14,18 @@ p {
     color:#707070;
 }
 
+.green-h3 {
+    color: #A1BFAD;
+    margin: 0;
+}
+
+.thesale-p {
+    font-size:22px;
+    font-weight:400;
+    color:#707070;
+    padding-top: 15px;
+}
+
 /*
 hr {
     border-color: $theme-primary;
@@ -307,6 +319,16 @@ header {
     color: #4B4B4B;
 }
 
+.thesale-greenbox {
+    height: 280px; 
+    width: 580px; 
+    background-color: #DCEBE2; 
+    padding-right: 3em;
+    padding-left: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
 /*
 .service-box {
     max-width: 400px;
@@ -456,6 +478,10 @@ header {
 
 .img-shadow-right {
     box-shadow: 75px -10px 0px 35px #F7FCF9;
+}
+
+.img-shadow-howitworks {
+    box-shadow: 30px -30px 0px 8px #F7FCF9;
 }
 
 img::selection {
