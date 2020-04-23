@@ -86,7 +86,76 @@ aside {
 */
 
 // Navigation
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    height: 10em;
+    padding-top: 3em;
+    .nav {
+        > li {
+            > a,
+            > a:focus {
+                font-weight: 700;
+                font-size: 22px;
+                padding-right: 50px;
+                &:hover {
+                    color: $theme-green;
+                }
+            }
 
+        }
+    }
+    .nav > li > a#notactive {
+            color: $theme-primary;
+            &:hover {
+                color: $theme-green;
+            }
+        }
+
+    .nav > li > a#active {
+            color: $theme-green;
+            &:hover {
+                color: $theme-green;
+            }
+        }
+}
+
+.navbar-thesale {
+    background-color: transparent;
+    border-color: transparent;
+    height: 10em;
+    padding-top: 3em;
+
+    .nav {
+        > li {
+            > a,
+            > a:focus {
+                font-weight: 700;
+                font-size: 22px;
+                padding-right: 50px;
+                &:hover {
+                    color: $theme-green;
+                }
+            }
+
+        }
+    }
+    .nav > li > a#notactive {
+            color: $theme-dark;
+            &:hover {
+                color: $theme-green;
+            }
+        }
+
+    .nav > li > a#active {
+            color: $theme-green;
+            &:hover {
+                color: $theme-green;
+            }
+        }
+}
+
+/*
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -164,6 +233,8 @@ aside {
 }
 
 // different navbar for thesalepage
+
+
 .navbar-thesale {
     background-color: transparent;
     border-color: transparent;
@@ -244,6 +315,7 @@ aside {
         }
     }
 }
+*/
 
 // Homepage Header
 header {
