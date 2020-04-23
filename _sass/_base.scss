@@ -401,6 +401,16 @@ header {
     padding-bottom: 3em;
 }
 
+.team-greenbox {
+    height: 250px; 
+    width: 600px; 
+    background-color: #DCEBE2; 
+    padding-right: 3em;
+    padding-left: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
 /*
 .service-box {
     max-width: 400px;
@@ -557,6 +567,18 @@ header {
 }
 
 .img-shadow-aboutus {
+    box-shadow: -70px 5px 0px 30px #F7FCF9;
+}
+
+.img-shadow-team {
+    box-shadow: -40px 0px 0px 15px #F7FCF9;
+}
+
+.img-shadow-right-team {
+    box-shadow: 75px -10px 0px 35px #F7FCF9;
+}
+
+.img-shadow-team-positions {
     box-shadow: -70px 5px 0px 30px #F7FCF9;
 }
 

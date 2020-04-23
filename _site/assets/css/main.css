@@ -65,6 +65,8 @@ header .header-content .header-content-inner p { font-weight: 300; color: rgba(2
 
 .thesale-greenbox { height: 280px; width: 580px; background-color: #DCEBE2; padding-right: 3em; padding-left: 3em; padding-top: 3em; padding-bottom: 3em; }
 
+.team-greenbox { height: 250px; width: 600px; background-color: #DCEBE2; padding-right: 3em; padding-left: 3em; padding-top: 3em; padding-bottom: 3em; }
+
 /* .service-box { max-width: 400px; margin: 50px auto 0; @media (min-width: 992px) { margin: 20px auto 0; } p { margin-bottom: 0; } } .portfolio-box { position: relative; display: block; max-width: 650px; margin: 0 auto; .portfolio-box-caption { color: white; opacity: 0; display: block; background: rgba( $theme-primary, .9 ); position: absolute; bottom: 0; text-align: center; width: 100%; height: 100%; @include transition-all; .portfolio-box-caption-content { width: 100%; text-align: center; position: absolute; top: 50%; transform: translateY(-50%); .project-category, .project-name { @include sans-serif-font; padding: 0 15px; } .project-category { text-transform: uppercase; font-weight: 600; font-size: 14px; } .project-name { font-size: 18px; } } } &:hover { .portfolio-box-caption { opacity: 1; } } @media (min-width: 768px) { .portfolio-box-caption { .portfolio-box-caption-content { .project-category { font-size: 16px; } .project-name { font-size: 22px; } } } } } .call-to-action { h2 { margin: 0 auto 20px; } } // Bootstrap Overrides .text-primary { color: $theme-primary; } .no-gutter > [class*='col-'] { padding-right:0; padding-left:0; } */
 .btn-green { padding-left: 15px; padding-right: 15px; border-radius: 0; border-color: transparent; background-color: #A1BFAD; color: white; letter-spacing: 1px; font-family: Montserrat-Bold; font-weight: 400; height: 50px; width: 150px; }
 
@@ -81,6 +83,12 @@ header .header-content .header-content-inner p { font-weight: 300; color: rgba(2
 .img-shadow-howitworks { box-shadow: 30px -30px 0px 8px #F7FCF9; }
 
 .img-shadow-aboutus { box-shadow: -70px 5px 0px 30px #F7FCF9; }
+
+.img-shadow-team { box-shadow: -40px 0px 0px 15px #F7FCF9; }
+
+.img-shadow-right-team { box-shadow: 75px -10px 0px 35px #F7FCF9; }
+
+.img-shadow-team-positions { box-shadow: -70px 5px 0px 30px #F7FCF9; }
 
 img::selection { color: white; background: transparent; }
 
