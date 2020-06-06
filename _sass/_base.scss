@@ -2,6 +2,14 @@ html,
 body {
     height: 100%;
     width: 100%;
+    scroll-snap-type: y mandatory;
+}
+
+.row {
+    height: 100vh;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 body {
@@ -12,6 +20,16 @@ p {
     font-size:18px;
     font-weight:300;
     color:#707070;
+}
+
+.slide {
+    scroll-snap-align: start;
+}
+
+.center-slide {
+    position: relative;
+    top: 25%;
+    transform: translateY(-50%);
 }
 
 .green-h3 {
