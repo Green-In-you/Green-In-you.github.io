@@ -20,8 +20,6 @@ body {
   scroll-snap-type: y mandatory; }
 
 .row {
-  height: 100vh;
-  width: 100%;
   margin-left: 0px;
   margin-right: 0px; }
 
@@ -34,12 +32,12 @@ p {
   color: #707070; }
 
 .slide {
-  scroll-snap-align: start; }
-
-.center-slide {
-  position: relative;
-  top: 25%;
-  transform: translateY(-50%); }
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .green-h3 {
   color: #A1BFAD;
@@ -552,6 +550,10 @@ header {
   color: white;
   text-shadow: none;
   background: #4B4B4B; }
+
+.img-responsive {
+  height: 100%;
+  max-height: 30em; }
 
 .img-shadow-left {
   box-shadow: -70px 5px 0px 15px #F7FCF9; }
