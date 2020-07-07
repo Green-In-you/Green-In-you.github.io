@@ -5,9 +5,13 @@ docs:
 
 - title: ABOUT
   url: /about/
-  
-- title: CONTACT
-  url: /contact/
 
 - title: TEAM
   url: /team/
+  
+- title: GALLERY
+  url: /gallery/
+
+  
+- title: CONTACT
+  url: /contact/

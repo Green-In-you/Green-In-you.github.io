@@ -40,10 +40,10 @@
 <body>
     <header style="background-image: url(/assets/img/aboutus_header.png); scroll-snap-align: start;">
     <div class="container-fluid">
-    <nav class="navbar-default">
+    <nav class="navbar-default navbar-static-top" style="position: relative;">
     
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+        <div class="navbar-header ">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                 data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -51,33 +51,39 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://localhost:4000" style="font-size: 30px; color: aliceblue; padding-left: 2em;">
-                GREEN IN YOU
-            </a>
+
+            <div style="padding-left: 5em;">
+                <a href="/">
+                    <img alt="Qries" src="../assets/img/logowithtext.png" width="200px">
+                </a>
+            </div>
             
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: transparent;">
+            <ul class="nav navbar-nav navbar-right text-center">
                 
                     
-                        <li><a href="http://localhost:4000/blog/" id="notactive">BLOG</a></li>
-                    
-                
-                    
-                        <li><a href="http://localhost:4000/about/" id="active">ABOUT</a></li>
+                        <li><a href="/blog/" id="notactive">BLOG</a></li>
                     
                 
                     
-                        <li><a href="http://localhost:4000/contact/" id="notactive">CONTACT</a></li>
+                        <li><a href="/about/" id="active">ABOUT</a></li>
                     
                 
                     
-                        <li><a href="http://localhost:4000/team/" id="notactive">TEAM</a></li>
+                        <li><a href="/team/" id="notactive">TEAM</a></li>
                     
                 
-                <li><a href=http://localhost:4000>🔍</a></li>
+                    
+                        <li><a href="/gallery/" id="notactive">GALLERY</a></li>
+                    
+                
+                    
+                        <li><a href="/contact/" id="notactive">CONTACT</a></li>
+                    
+                
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -93,78 +99,117 @@
         </div>
     </div>
 </header>
-    <div class="container-fluid"></div>
-    <div class="row">
-        <div class="col-xs-6 col-xs-offset-3" style="padding-top: 10em;">
+    <div class="container-fluid">
+    <div class="slide">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
 
-            <h3 class="section-heading-letterspaced" style="font-size: 30px; padding-bottom: 1em;">TANISHA GHORPADE</h3>
-            <p style="font-size: 18px;"> We want to eradicate the stigma associated with reusing clothes. Sustainable fashion is
-                for anyone who wants to
-                appreciate and enjoy fashion in harmony with nature. By creating a respectable circular system, we aim to
-                magnify the
-                social and environmental benefits of pre-owned fashion. </p>
-            <p style="font-size: 18px;">“I’ve observed second-hand clothing is still visualized as ragged, dirty clothing.
-                This image may have been true in the past when apparel was purchased by the customer and then
-                disposed after rigorous use.</p>
-            <p style="font-size: 18px;">However, today, people’s shopping habits have extensively changed because of
-            stimulus from
-            the fashion giants. Since companies churn out brand new styles about 52 times a year people feel
-            “out-of-fashion”
-            quickly and desire new clothing. Therefore, unlike previous times, clothing gets discarded not because it is
-            ragged, but
-            simply because people are bored of it.”</p>
-            <p style="font-size: 18px;">If these barely used clothes are still in prime condition, they really should not be
-                thrown away and swamp the planet, causing catastrophic environment damage. Instead, we should work to get
-                rid of
-                the stigma present and normalise reusing clothes. Sustainable fashion is not just for the low socio-economic
-                class; it
-                is for every conscious individual who wants to appreciate and enjoy fashion in harmony with nature!”</p>
+                <h3 class="section-heading-letterspaced">Vision</h3>
+                <p style="font-size: 16px;">To facilitate sustainable consumerism in urban India</p>
+                <h3 class="section-heading-letterspaced">Mission</h3>
+                <p style="font-size: 16px;">We aim to create a community which enables socializing, networking, learning, developing professionally and most
+                importantly, empowering individuals to lead sustainable lifestyles. As we work towards our primary mission, we also seek
+                to bridge inter- and intra-generational financial, material and intellectual resource gaps within our community.</p>
+                <p style="font-size: 16px;">However, today, people’s shopping habits have extensively changed because of
+                stimulus from
+                the fashion giants. Since companies churn out brand new styles about 52 times a year people feel
+                “out-of-fashion”
+                quickly and desire new clothing. Therefore, unlike previous times, clothing gets discarded not because it is
+                ragged, but
+                simply because people are bored of it.”</p>
+                <p style="font-size: 16px;">If these barely used clothes are still in prime condition, they really should not be
+                    thrown away and swamp the planet, causing catastrophic environment damage. Instead, we should work to get
+                    rid of
+                    the stigma present and normalise reusing clothes. Sustainable fashion is not just for the low socio-economic
+                    class; it
+                    is for every conscious individual who wants to appreciate and enjoy fashion in harmony with nature!”</p>
+                
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div class="hidden-xs col-lg-4 col-lg-offset-2">
+                <div class="img-shadow-aboutus img-container" style=" height: 250px; width: 300px; background-color: #DCEBE2;"></div>
+            </div>
+-->
+    <div class="slide">
+        <div class="row" style="padding-top: 5em;">
+            
+            <div class="col-lg-8 col-lg-offset-2 col-xs-4">
+                <h2 class="green-h3" style="color: black; padding-bottom: 1em;"> OUR IMPACTS</h2>
+                <p>Through setting up Green In You, we were able to encourage people from a strata of the society who never in their lives
+                had shopped secondhand. They now enthusiastically come out to normalize reusing clothes. We built a respectable
+                environment which destigmatized secondhand shopping and sowed a seed for fighting against the second largest polluter in
+                the world, fashion!</p>
+                <p>Our circular model extends the lifespan of thousands of products per sale, keeping resources within the economy and
+                hence diverting them from landfills. GIY works to reduce the demand for virgin material resources and their consequent
+                extractive impacts.</p>
+                <p>We understand that as the ravaging effects of climate change are becoming more distinct, their brunt is unjustly borne
+                by the poor. We see it as our responsibility to funnel economic, intellectual and material resources towards the lower
+                socio-economic classes in order to build their capacity to prosper.</p>
+                <p>The youth coming together to set up our events are involved in exploring their creative energies, collaborating
+                effectively and developing their professional acumen. At Green In You, we believe that to solve problems bigger than
+                ourselves it is essential to actively engage within the local community and cultivate a sense of purpose amongst us.
+                Strengthening our social capital helps us to make our world a better place.</p>
+            </div>
         </div>
     </div>
 
-    <div class="row" style="padding-top: 10em;">
-        <div class="col-xs-3 col-xs-offset-2">
-            <div class="img-shadow-aboutus img-container" style=" height: 250px; width: 300px; background-color: #DCEBE2;"></div>
-        </div>
-        <div class="col-xs-6">
-            <h2 class="green-h3" style="color: black; padding-bottom: 1em;"> OUR IMPACT</h2>
-            <p>Through setting up ‘Green in You’, we were able to encourage people from a strata of the society; who never in their
-            lives had shopped second-hand.They now enthusiastically came out to normalize reusing clothes.</p>
-            <p>We built a respectable
-            environment which destigmatized second-hand shopping and sowed a seed for fighting against the second largest polluter
-            in the world, fashion!</p>
-            <p>Besides promoting sustainable fashion, upcycling and extending the lifespan of over a thousand
-            clothing items, we diverted all our profits towards organizations working dedicatedly for women empowerment,
-            sustainability, animal and human welfare.</p>
+    <div class="slide" style="padding-top: 10em; padding-bottom: 5em;">
+        <div class="row">
+            <div class="col-xs-10 col-lg-4 col-lg-offset-2">
+    
+                <h3 class="section-heading" style="font-size: 38px;">Let’s work together!</h3>
+                <p>Our team is dedicated to empower urban India to lead sustainable lifestyles. We want to make the world a
+                    greener and
+                    better place to live in for everyone.</p>
+                <p>We're always looking for individuals as well as organizations who believe in our vision and want to work
+                    with us towards
+                    the common good.</p>
+                <a href='/team'>
+                    <button type="button" class="btn-green">LEARN MORE</button>
+                </a>
+            </div>
+            <div class="hidden-xs col-lg-4 col-lg-offset-1 image-container ">
+                <img class="img-shadow-right" src="/assets/img/fernando_lavin_fi5YSQfxbVk_uns@2x.png"
+                    style="height:280px; overflow: hidden;" />
+            </div>
         </div>
     </div>
-
-    <div class="row" style="padding-top: 10em; padding-bottom: 10em;">
-        <div class="col-xs-8 col-xs-offset-2 text-center">
-            <h2 style="font-size: 40px; font-weight: 600;">Sustainable fashion is not just for the lower socio- economic class, it is for every conscious individual who wants to appreciate and enjoy fashion in harmony with nature!</h2 style="font-size: 40px; font-weight: 600;">
-        </div>
         
+
+    <div class="slide">
+        <div class="row" style="padding-top: 10em; padding-bottom: 10em;">
+            <div class="col-lg-6 col-lg-offset-3 text-center">
+                <h2 style="font-size: 40px; font-weight: 600;">Sustainable fashion is not just for the lower socio- economic class, it is for every conscious individual who wants to appreciate and enjoy fashion in harmony with nature!</h2 style="font-size: 40px; font-weight: 600;">
+            </div>
+            
+        </div>
     </div>
-    <div class="row" style="padding-bottom: 5em;">
-    <div class="col-xs-4 col-xs-offset-1" style="padding-right: 50px;">
+
+
+    <div class="row" style="padding-bottom: 5em;  scroll-snap-align: end;">
+    <div class="col-lg-4 col-lg-offset-1 col-xs-12" style="padding-bottom: 2em;">
         <p  class="footer-p"> Subscribe to our mailing list</p>
         <p class="footer-p"> Be the first to get notified about our sales, workshops, locations of our collection camps, and more! You're on your way to a greener you.</p>
     </div>
-    <div class="col-xs-2">
+    <div class="col-lg-2 col-xs-12" style="padding-bottom: 2em;">
         <h3 class="footer-p" style="padding-bottom: 1em">Follow us on</h3>
         <p class="footer-p" style="font-weight: 500;"> email@greeninyou.com</p>
     </div>
-    <div class="col-xs-2" style="padding-left: 4em;">
-        <h3 class="footer-p" style="padding-bottom: 1em">Help</h3>
-        <p class="footer-p">FAQ</p>
-        <p class="footer-p">Career</p>
-        <p class="footer-p">Privacy Policy</p>
-        <p class="footer-p">Terms & Conditions</p>
-    </div>
-    <div class="col-xs-2" style="padding-left: 5em;">
-        <h3 class="footer-p" style="padding-bottom: 1em">Connect</h3>
-        <p class="footer-p">Contact Us</p>
-        <p class="footer-p">Join Our Team</p>
+    <div class="row">
+        <div class="col-lg-2 col-xs-6 ">
+            <h3 class="footer-p" style="padding-bottom: 1em">Help</h3>
+            <p class="footer-p">FAQ</p>
+            <p class="footer-p">Career</p>
+            <p class="footer-p">Privacy Policy</p>
+            <p class="footer-p">Terms & Conditions</p>
+        </div>
+        <div class="col-lg-2 col-xs-6">
+            <h3 class="footer-p" style="padding-bottom: 1em">Connect</h3>
+            <p class="footer-p">Contact Us</p>
+            <p class="footer-p">Join Our Team</p>
+        </div>
     </div>
 </div>
 </div>

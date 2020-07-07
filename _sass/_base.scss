@@ -5,6 +5,10 @@ body {
     scroll-snap-type: y mandatory;
 }
 
+.container-fluid {
+    min-width: 360px;
+}
+
 .row {
     margin-left: 0px;
     margin-right: 0px;
@@ -133,7 +137,6 @@ aside {
             > a:focus {
                 font-weight: 700;
                 font-size: 22px;
-                padding-right: 50px;
                 &:hover {
                     color: $theme-green;
                 }
@@ -154,6 +157,42 @@ aside {
                 color: $theme-green;
             }
         }
+    @media (min-width: 768px) {
+        background-color: transparent;
+        border-color: transparent;
+        .navbar-header .navbar-brand {
+            color: rgba(white, .7);
+            &:hover,
+            &:focus {
+                color: white;
+            }
+        }
+        .nav > li > a,
+        .nav > li > a:focus {
+            &:hover {
+                color: $theme-green;
+            }
+        }
+        &.affix {
+            background-color: white;
+            border-color: rgba($theme-dark, .5);
+            .navbar-header .navbar-brand {
+                color: $theme-primary;
+                font-size: 14px;
+                &:hover,
+                &:focus {
+                    color: darken($theme-primary, 10%);
+                }
+            }
+            .nav > li > a,
+            .nav > li > a:focus {
+                color: $theme-dark;
+                &:hover {
+                    color: $theme-primary;
+                }
+            }
+        }
+    }
 }
 
 .navbar-thesale {
@@ -428,8 +467,8 @@ header {
 }
 
 .thesale-greenbox {
-    height: 280px; 
-    width: 580px; 
+    //height: 280px; 
+    width: 100%; 
     background-color: #DCEBE2; 
     padding-right: 3em;
     padding-left: 3em;
@@ -438,8 +477,8 @@ header {
 }
 
 .team-greenbox {
-    height: 250px; 
-    width: 600px; 
+    //height: 250px; 
+    width: 100%; 
     background-color: #DCEBE2; 
     padding-right: 3em;
     padding-left: 3em;
@@ -447,11 +486,18 @@ header {
     padding-bottom: 3em;
 }
 
+.team-positions-greenbox {
+    height: 250px;
+    width: 320px;
+    background-color: #DCEBE2;
+}
+
 .contact-box {
     background-color: #000000;
-    height: 600px;
-    width: 800px;
+    height: 100%;
+    width: 100%;
     opacity: 0.7;
+    //max-width: 800px;
 }
 
 .contact-input {

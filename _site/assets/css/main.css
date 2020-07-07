@@ -19,6 +19,9 @@ body {
   width: 100%;
   scroll-snap-type: y mandatory; }
 
+.container-fluid {
+  min-width: 360px; }
+
 .row {
   margin-left: 0px;
   margin-right: 0px; }
@@ -128,8 +131,7 @@ aside {
   .navbar-default .nav > li > a,
   .navbar-default .nav > li > a:focus {
     font-weight: 700;
-    font-size: 22px;
-    padding-right: 50px; }
+    font-size: 22px; }
     .navbar-default .nav > li > a:hover,
     .navbar-default .nav > li > a:focus:hover {
       color: #A1BFAD; }
@@ -141,6 +143,31 @@ aside {
     color: #A1BFAD; }
     .navbar-default .nav > li > a#active:hover {
       color: #A1BFAD; }
+  @media (min-width: 768px) {
+    .navbar-default {
+      background-color: transparent;
+      border-color: transparent; }
+      .navbar-default .navbar-header .navbar-brand {
+        color: rgba(255, 255, 255, 0.7); }
+        .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
+          color: white; }
+      .navbar-default .nav > li > a:hover,
+      .navbar-default .nav > li > a:focus:hover {
+        color: #A1BFAD; }
+      .navbar-default.affix {
+        background-color: white;
+        border-color: rgba(75, 75, 75, 0.5); }
+        .navbar-default.affix .navbar-header .navbar-brand {
+          color: #FFFFFF;
+          font-size: 14px; }
+          .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus {
+            color: #e6e6e6; }
+        .navbar-default.affix .nav > li > a,
+        .navbar-default.affix .nav > li > a:focus {
+          color: #4B4B4B; }
+          .navbar-default.affix .nav > li > a:hover,
+          .navbar-default.affix .nav > li > a:focus:hover {
+            color: #FFFFFF; } }
 
 .navbar-thesale {
   background-color: transparent;
@@ -387,8 +414,7 @@ header {
   color: #4B4B4B; }
 
 .thesale-greenbox {
-  height: 280px;
-  width: 580px;
+  width: 100%;
   background-color: #DCEBE2;
   padding-right: 3em;
   padding-left: 3em;
@@ -396,18 +422,22 @@ header {
   padding-bottom: 3em; }
 
 .team-greenbox {
-  height: 250px;
-  width: 600px;
+  width: 100%;
   background-color: #DCEBE2;
   padding-right: 3em;
   padding-left: 3em;
   padding-top: 3em;
   padding-bottom: 3em; }
 
+.team-positions-greenbox {
+  height: 250px;
+  width: 320px;
+  background-color: #DCEBE2; }
+
 .contact-box {
   background-color: #000000;
-  height: 600px;
-  width: 800px;
+  height: 100%;
+  width: 100%;
   opacity: 0.7; }
 
 .contact-input {

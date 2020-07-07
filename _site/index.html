@@ -40,10 +40,10 @@
 <body>
     <header style="background-image: url(/assets/img/homepage_header.png); scroll-snap-align: start;">
     <div class="container-fluid">
-    <nav class="navbar-default">
+    <nav class="navbar-default navbar-static-top" style="position: relative;">
     
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+        <div class="navbar-header ">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                 data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -51,33 +51,39 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://localhost:4000" style="font-size: 30px; color: aliceblue; padding-left: 2em;">
-                GREEN IN YOU
-            </a>
+
+            <div style="padding-left: 5em;">
+                <a href="/">
+                    <img alt="Qries" src="../assets/img/logowithtext.png" width="200px">
+                </a>
+            </div>
             
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: transparent;">
+            <ul class="nav navbar-nav navbar-right text-center">
                 
                     
-                        <li><a href="http://localhost:4000/blog/" id="notactive">BLOG</a></li>
-                    
-                
-                    
-                        <li><a href="http://localhost:4000/about/" id="notactive">ABOUT</a></li>
+                        <li><a href="/blog/" id="notactive">BLOG</a></li>
                     
                 
                     
-                        <li><a href="http://localhost:4000/contact/" id="notactive">CONTACT</a></li>
+                        <li><a href="/about/" id="notactive">ABOUT</a></li>
                     
                 
                     
-                        <li><a href="http://localhost:4000/team/" id="notactive">TEAM</a></li>
+                        <li><a href="/team/" id="notactive">TEAM</a></li>
                     
                 
-                <li><a href=http://localhost:4000>🔍</a></li>
+                    
+                        <li><a href="/gallery/" id="notactive">GALLERY</a></li>
+                    
+                
+                    
+                        <li><a href="/contact/" id="notactive">CONTACT</a></li>
+                    
+                
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -93,10 +99,10 @@
         </div>
     </div>
 </header>
-    <div class="container-fluid">
+    <div class="container-fluid ">
     <div class="slide">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-lg-4 col-lg-offset-2">
 
                 <h3 class="section-heading-letterspaced">TANISHA GHORPADE</h3>
 
@@ -109,7 +115,7 @@
                 transfer of wealth and resources to the underprivileged.”</p>
             </div>
 
-            <div class="col-sm-4 image-container">
+            <div class="col-lg-4 col-lg-offset-1 image-container">
                 <img class="img-responsive" src="/assets/img/Mask_Group_5_c_pattern.png"/>
             </div>
         </div>
@@ -117,118 +123,136 @@
 
     <div class="slide">
         <div class="row">
-            <div class=" col-sm-4 col-xs-offset-1 image-container" style="padding-top:5em ;">
+            <div class="hidden-xs col-sm-4 col-sm-offset-1 image-container" style="padding-top:5em; overflow: hidden">
                 <img class="img-shadow-left" src="/assets/img/fernando_lavin_fi5YSQfxbVk_uns@2x.png" style="height:25em;" />
             </div>
 
-            <div class="col-sm-4 col-xs-offset-1">
-
+            <div class="col-lg-4 col-lg-offset-1">
                 <h3 class="section-heading">Your wardrobe is full of possibilities</h3>
                 <p style="padding-bottom: 30px;">Greening your closet can make a world of an impact. Play your part in a green fashion and lifestyle revolution. Our
                 platform provides an avenue for conscious consumption. We have an eye for curating great preloved styles and offer a
                 variety of everyday eco-friendly products. We’re here to help you live more sustainably and to help you do your part in
                 making the world a better place.</p>
-                <button type="button" class="btn-green" >LEARN MORE</button>
+                <a href='/about'>
+                    <button type="button" class="btn-green" >LEARN MORE</button>
+                </a>
             </div>
         </div>
     </div>
 
     <div class="slide">
         <div class="row">
-            <div class="col-md-4 col-md-offset-4 text-center" style="padding-top: 50px;">
+            <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2 text-center" style="padding-top: 50px;">
                 <p style="font-size: 90px; color: #A1BFAD; font-family: BetterTogether;">preloved</p>
                 <p>Don’t be surprised, these are secondhand styles! They are some of our favourite looks, put together with your
                     donations.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4 text-center" style="padding-top: 50px;">
                 <p>Worldwide 73% of all our clothes end up in the landfill</p>
                 <p>Clothes can take up to 40 years to decompose</p>
                 <p>Shoes can take up to 1000 years to breakdown</p>
                 <p>It takes 2700 gallons of water to make a cotton shirt</p>
                 <p>It takes 1800 gallons of water to make a pair of jeans</p>
-                
             </div>
         </div>
     </div>
 
-    
-
-    <div class="row slide" style="padding-top: 10em; padding-bottom: 10em;">
-        <div class="col-xs-4 col-xs-offset-1" style="padding-left: 4em;">
-            <h3 class="green-h3">WE ORGANIZE</h3>
-            <p class="thesale-p" style="font-weight: 300;">We will do all the hard work so you don’t have to!</p>
-            <p class="thesale-p" style="font-weight: 300;">We’ll sanitize the stock and check for quality.</p>
-            <p class="thesale-p" style="font-weight: 300;">We will also prepare the snacks, bring in the photobooth, find the right music and set the right vibe.</p>
-            <p class="thesale-p" style="font-weight: 300;">And when we’re ready, all you will have to do is have a fabulous time!</p>
-            <h3 class="green-h3" style="padding-top: 1em; padding-bottom: 1em;">YOU SHOP</h3>
-            <p class="thesale-p" style="font-weight: 300; padding-bottom: 1em;">Shop it like it’s hot.</p>
-            <p class="thesale-p" style="font-weight: 300; padding-bottom: 1em;">If everyone invested in just one pre-used clothing item this year, we would save approximately 270 crore kilograms of
-            carbon emissions. With our points system it’s easy and rewarding so you’ll be buying more with less. Also, while you’re
-            at it you could be networking, grooving and soaking up the whole sustainability vibe with us!</p>
-        </div>
-    
-        <div class="col-xs-4 col-xs-offset-1 image-container" style="padding-top:5em;">
-            <img class="img-shadow-howitworks" src="/assets/img/thesale_howitworks.png" style="height:500px;" />
+    <div class="slide">
+        <div class="row">
+            <div class="text-center">
+                <p style="font-size: 3em;"> What can I donate?</p>
+            </div>
+            <div>
+                <img src="../assets/img/whatwecando/Asset 2.png" style="width:150px">
+                <img src="../assets/img/whatwecando/Asset 3.png" style="width:150px">
+                <img src="../assets/img/whatwecando/Asset 4.png" style="width:150px">
+                <img src="../assets/img/whatwecando/Asset 5.png" style="width:150px">
+                <img src="../assets/img/whatwecando/Asset 6.png" style="width:150px">
+            </div>
         </div>
     </div>
 
-    <div class="row slide" style="padding-top: 10em; padding-bottom: 5em;">
-        <div class="col-sm-3 col-md-4 col-xs-4 col-xs-offset-2">
+    <div class="slide" style="padding-top: 5em;">
+        <div class="row">
+            <div class="col-xs-10 col-lg-8 col-lg-offset-2">
+                <div class="img-shadow-right thesale-greenbox">
+                    <p style="color: white; font-weight: 600;">DON'T HAVE ITEMS THAT FIT THE DONATION CRITERIA BUT STILL
+                        WANT TO
+                        CONTRIBUTE?</p>
+                    <p style="color: white; font-weight: 400; padding-top: 1em;">Setting up an impactful event isn’t easy.
+                        Contribute to our vision of creating a sustainable fashion community by making
+                        a monetary donation to Green In You and help drive the success of our sale. Contact us to get
+                        started.</p>
+                </div>
+            </div>
     
-            <h3 class="section-heading" style="font-size: 38px;">Let’s work together!</h3>
-            <p>Our team is dedicated to empower urban India to lead sustainable lifestyles. We want to make the world a greener and
-            better place to live in for everyone.</p>
-            <p>We're always looking for individuals as well as organizations who believe in our vision and want to work with us towards
-            the common good.</p>
-            <button type="button" class="btn-green">LEARN MORE</button>
-        </div>
-        <div class="col-sm-3 col-md-4 col-xs-4  image-container ">
-            <img class="img-shadow-right" src="/assets/img/fernando_lavin_fi5YSQfxbVk_uns@2x.png" style="height:280px;" />
         </div>
     </div>
 
-    <div class="row">
-        <h3 class="col-md-4 text-center green-h3">CHANGE YOUR MINDSET</h3>
-        <h3 class="col-md-4 text-center green-h3">CHANGE YOUR LIFESTYLE</h3>
-        <h3 class="col-md-4 text-center green-h3">CHANGE YOUR WORLD</h3>
+    <div class="slide" style="padding-top: 10em; padding-bottom: 10em;">
+        <div class="row">
+            <div class="col-xs-10 col-lg-4 col-lg-offset-2" style="padding-right: 1em;">
+                <h3>WE ORGANIZE</h3>
+                <p>We will do all the hard work so you don’t have to!</p>
+                <p>We’ll sanitize the stock and check for quality.</p>
+                <p>We will also prepare the snacks, bring in the photobooth, find the right music and set the right vibe.</p>
+                <p>And when we’re ready, all you will have to do is have a fabulous time!</p>
+                <h3>YOU SHOP</h3>
+                <p>Shop it like it’s hot.</p>
+                <p>If everyone invested in just one pre-used clothing item this year, we would save approximately 270 crore kilograms of
+                carbon emissions. With our points system it’s easy and rewarding so you’ll be buying more with less. Also, while you’re
+                at it you could be networking, grooving and soaking up the whole sustainability vibe with us!</p>
+            </div>
+        
+            <div class=" hidden-xs col-xs-4 col-sm-offset-1 image-container" style="padding-top:5em;">
+                <img class="img-shadow-howitworks img-responsive" src="/assets/img/thesale_howitworks.png" style="height:500px; overflow: hidden;" />
+            </div>
+        </div>
     </div>
 
-    <div class="row slide" style="padding-top: 15em;">
-        <div class="col-xs-6 col-xs-offset-4 img-shadow-right thesale-greenbox">
-            <p style="color: white; font-weight: 600;">DON'T HAVE ITEMS THAT FIT THE DONATION CRITERIA BUT STILL WANT TO
-                CONTRIBUTE?</p>
-            <p style="color: white; font-weight: 400; padding-top: 1em;">Setting up an impactful event isn’t easy.
-                Contribute to our vision of creating a sustainable fashion community by making
-                a monetary donation to Green In You and help drive the success of our sale. Contact us to get started.</p>
+    <div class="slide" style="padding-top: 10em; padding-bottom: 5em;">
+        <div class="row">
+            <div class="col-xs-10 col-lg-4 col-lg-offset-2">
+        
+                <h3 class="section-heading" style="font-size: 38px;">Let’s work together!</h3>
+                <p>Our team is dedicated to empower urban India to lead sustainable lifestyles. We want to make the world a greener and
+                better place to live in for everyone.</p>
+                <p>We're always looking for individuals as well as organizations who believe in our vision and want to work with us towards
+                the common good.</p>
+                <a href='/team'>
+                    <button type="button" class="btn-green">LEARN MORE</button>
+                </a>
+            </div>
+            <div class="hidden-xs col-lg-4 col-lg-offset-1 image-container ">
+                <img class="img-shadow-right" src="/assets/img/fernando_lavin_fi5YSQfxbVk_uns@2x.png" style="height:280px; overflow: hidden;"" />
+            </div>
         </div>
     </div>
     
-    
-    <div class="row" style="padding-bottom: 5em;">
-    <div class="col-xs-4 col-xs-offset-1" style="padding-right: 50px;">
+    <div style="padding-top: 5em;">
+        <div class="row" style="padding-bottom: 5em;  scroll-snap-align: end;">
+    <div class="col-lg-4 col-lg-offset-1 col-xs-12" style="padding-bottom: 2em;">
         <p  class="footer-p"> Subscribe to our mailing list</p>
         <p class="footer-p"> Be the first to get notified about our sales, workshops, locations of our collection camps, and more! You're on your way to a greener you.</p>
     </div>
-    <div class="col-xs-2">
+    <div class="col-lg-2 col-xs-12" style="padding-bottom: 2em;">
         <h3 class="footer-p" style="padding-bottom: 1em">Follow us on</h3>
         <p class="footer-p" style="font-weight: 500;"> email@greeninyou.com</p>
     </div>
-    <div class="col-xs-2" style="padding-left: 4em;">
-        <h3 class="footer-p" style="padding-bottom: 1em">Help</h3>
-        <p class="footer-p">FAQ</p>
-        <p class="footer-p">Career</p>
-        <p class="footer-p">Privacy Policy</p>
-        <p class="footer-p">Terms & Conditions</p>
-    </div>
-    <div class="col-xs-2" style="padding-left: 5em;">
-        <h3 class="footer-p" style="padding-bottom: 1em">Connect</h3>
-        <p class="footer-p">Contact Us</p>
-        <p class="footer-p">Join Our Team</p>
+    <div class="row">
+        <div class="col-lg-2 col-xs-6 ">
+            <h3 class="footer-p" style="padding-bottom: 1em">Help</h3>
+            <p class="footer-p">FAQ</p>
+            <p class="footer-p">Career</p>
+            <p class="footer-p">Privacy Policy</p>
+            <p class="footer-p">Terms & Conditions</p>
+        </div>
+        <div class="col-lg-2 col-xs-6">
+            <h3 class="footer-p" style="padding-bottom: 1em">Connect</h3>
+            <p class="footer-p">Contact Us</p>
+            <p class="footer-p">Join Our Team</p>
+        </div>
     </div>
 </div>
+    </div>
 </div>
 
     <!-- jQuery -->

@@ -1,8 +1,8 @@
 <div class="container-fluid">
-    <nav class="{{ include.navbartype }}">
+    <nav class="{{ include.navbartype }} navbar-static-top" style="position: relative;">
     
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+        <div class="navbar-header ">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                 data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -10,23 +10,25 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="{{site.url | relative_url }}" style="font-size: 30px; color: aliceblue; padding-left: 2em;">
-                GREEN IN YOU
-            </a>
+
+            <div style="padding-left: 5em;">
+                <a href="{{'../' | relative_url }}">
+                    <img alt="Qries" src="../assets/img/logowithtext.png" width="200px">
+                </a>
+            </div>
             
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: transparent;">
+            <ul class="nav navbar-nav navbar-right text-center">
                 {% for item in site.data.pagelist.docs %}
                     {% if page.url == item.url %}
-                        <li><a href="{{ item.url | prepend: site.url }}" id="active">{{ item.title }}</a></li>
+                        <li><a href="{{ item.url | relative_url}}" id="active">{{ item.title }}</a></li>
                     {% else %}
-                        <li><a href="{{ item.url | prepend: site.url }}" id="notactive">{{ item.title }}</a></li>
+                        <li><a href="{{ item.url | relative_url }}" id="notactive">{{ item.title }}</a></li>
                     {% endif %}
                 {% endfor %}
-                <li><a href={{site.url}}>🔍</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

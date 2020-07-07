@@ -40,10 +40,10 @@
 
 <body>
     <div class="container-fluid">
-    <nav class="navbar-default">
+    <nav class="navbar-default navbar-static-top" style="position: relative;">
     
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+        <div class="navbar-header ">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                 data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -51,33 +51,39 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://localhost:4000" style="font-size: 30px; color: aliceblue; padding-left: 2em;">
-                GREEN IN YOU
-            </a>
+
+            <div style="padding-left: 5em;">
+                <a href="/">
+                    <img alt="Qries" src="../assets/img/logowithtext.png" width="200px">
+                </a>
+            </div>
             
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: transparent;">
+            <ul class="nav navbar-nav navbar-right text-center">
                 
                     
-                        <li><a href="http://localhost:4000/blog/" id="notactive">BLOG</a></li>
-                    
-                
-                    
-                        <li><a href="http://localhost:4000/about/" id="notactive">ABOUT</a></li>
+                        <li><a href="/blog/" id="notactive">BLOG</a></li>
                     
                 
                     
-                        <li><a href="http://localhost:4000/contact/" id="notactive">CONTACT</a></li>
+                        <li><a href="/about/" id="notactive">ABOUT</a></li>
                     
                 
                     
-                        <li><a href="http://localhost:4000/team/" id="notactive">TEAM</a></li>
+                        <li><a href="/team/" id="notactive">TEAM</a></li>
                     
                 
-                <li><a href=http://localhost:4000>🔍</a></li>
+                    
+                        <li><a href="/gallery/" id="notactive">GALLERY</a></li>
+                    
+                
+                    
+                        <li><a href="/contact/" id="notactive">CONTACT</a></li>
+                    
+                
             </ul>
         </div>
         <!-- /.navbar-collapse -->
