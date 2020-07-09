@@ -40,12 +40,12 @@
 <body>
     <header style="background-image: url(/assets/img/blog_header.png); scroll-snap-align: start;">
     <div class="container-fluid">
-    <nav class="navbar-default navbar-static-top" style="position: relative;">
+    <nav class="navbar-default navbar-static-top">
     
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header ">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1">
+            <button href="#Foo" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1, #header-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -90,12 +90,14 @@
     </nav>
     <!-- /.container-fluid -->
 </div>
-    <div class="header-content">
-        <div class="header-content-inner">
-            
-            <h1 style="font-family: BetterTogether;">Blogs</h1>
-            <p style="font-family: Montserrat-Bold;"></p>
-            
+    <div class="header-content" style="min-height: 25em;">
+        <div id="header-collapse" class="collapse in">
+            <div class="header-content-inner">
+                
+                <h1 style="font-family: BetterTogether;">Blogs</h1>
+                <p style="font-family: Montserrat-Bold;"></p>
+                
+            </div>
         </div>
     </div>
 </header>
