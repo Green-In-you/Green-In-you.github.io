@@ -5,7 +5,28 @@
 
 <body>
     {% include navbar.html navbartype="navbar-default" %}
-    {{content}}
+
+    <div class="container-fluid" style="padding-left: 2em; padding-right: 2em; padding-top: 2em;">
+        <div>
+            <h1>{{ page.title }}</h1>
+            {{content}}
+        </div>
+    
+        <ul>
+            {% for post in site.posts %}
+            {% unless post.id == page.id %}
+        
+            <li>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                {{ post.excerpt }}
+            </li>
+        
+            {% endunless %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% include footer.html %}
     {% include scripts.html %}
 </body>
 

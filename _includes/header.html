@@ -1,7 +1,6 @@
-<header style="background-image: url({{ page.headerurl | relative_url }}); scroll-snap-align: start;">
+<header style="background-image: url({{ page.headerurl | relative_url }});">
     {% include navbar.html navbartype="navbar-default" %}
-    <div class="header-content" style="min-height: 25em;">
-        <div id="header-collapse" class="collapse in">
+    <div class="header-content">
             <div class="header-content-inner">
                 {% if page.pbeforeh3 == true %}
                 <p style="font-family: Montserrat-Bold;">{{page.headerptext}}</p>
@@ -11,6 +10,5 @@
                 <p style="font-family: Montserrat-Bold;">{{page.headerptext}}</p>
                 {% endif %}
             </div>
-        </div>
     </div>
 </header>

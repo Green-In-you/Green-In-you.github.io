@@ -2,7 +2,6 @@ html,
 body {
     height: 100%;
     width: 100%;
-    scroll-snap-type: y mandatory;
 }
 
 .container-fluid {
@@ -25,9 +24,8 @@ p {
 }
 
 .slide {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    scroll-snap-align: start;
     display: flex;
     align-items: center;  // verticall center
     justify-content: center; // horizontally center
@@ -65,7 +63,6 @@ p {
     color: #4B4B4B;
     margin: 0;
 }
-
 /*
 hr {
     border-color: $theme-primary;
@@ -502,7 +499,7 @@ header {
 
 .contact-input {
     border-radius: 0;
-    color: white;
+    color: black;
     height: 50px;
     margin-bottom: 3em;
 }
