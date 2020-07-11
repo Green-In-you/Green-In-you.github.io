@@ -149,6 +149,8 @@ aside {
         color: rgba(255, 255, 255, 0.7); }
         .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
           color: white; }
+      .navbar-default .navbar-collapse {
+        background-color: transparent; }
       .navbar-default .nav > li > a:hover,
       .navbar-default .nav > li > a:focus:hover {
         color: #A1BFAD; }
@@ -166,6 +168,9 @@ aside {
           .navbar-default.affix .nav > li > a:hover,
           .navbar-default.affix .nav > li > a:focus:hover {
             color: #FFFFFF; } }
+
+.navbar-collapse {
+  background-color: #00b33c; }
 
 .navbar-thesale {
   background-color: transparent;

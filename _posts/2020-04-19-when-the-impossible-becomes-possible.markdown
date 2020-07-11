@@ -1,6 +1,6 @@
 ---
 layout: posts
-title:  "When the impossible becomes possible (Op-Ed)"
+title:  "When the impossible becomes possible"
 date:   2020-04-19 15:32:34 +0530
 categories: sustainability
 ---

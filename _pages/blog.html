@@ -6,14 +6,19 @@ headerurl: "../assets/img/blog_header.png"
 headerptext: ""
 headerh3text: "Blogs"
 ---
-<div>
-    <ul>
-        {% for post in site.posts %}
-        <li>
+<div class="container-fluid" style="padding-left: 2em; padding-right: 2em">
+    {% for post in site.posts %}
+    {% unless post.id == page.id %}
+    
+    <div style=" padding-bottom: 2em; padding-top: 2em;">
+        <div style="overflow: hidden; height: 12em;">
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             {{ post.excerpt }}
-        </li>
-        {% endfor %}
-    </ul>
+        </div>
+    </div>
+    
+    
+    {% endunless %}
+    {% endfor %}
 
 </div>

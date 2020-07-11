@@ -164,6 +164,9 @@ aside {
                 color: white;
             }
         }
+        .navbar-collapse {
+            background-color: transparent;
+        }
         .nav > li > a,
         .nav > li > a:focus {
             &:hover {
@@ -192,6 +195,9 @@ aside {
     }
 }
 
+.navbar-collapse {
+    background-color: #00b33c;
+}
 .navbar-thesale {
     background-color: transparent;
     border-color: transparent;
