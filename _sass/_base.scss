@@ -166,9 +166,12 @@ aside {
         }
         .navbar-collapse {
             background-color: transparent;
+            position: static;
+            z-index: 0;
         }
         .nav > li > a,
         .nav > li > a:focus {
+            padding-right: 2em;
             &:hover {
                 color: $theme-green;
             }
@@ -197,7 +200,23 @@ aside {
 
 .navbar-collapse {
     background-color: #00b33c;
+    position: relative ;
+    z-index: 1;
 }
+
+.navbar-blogpost {
+    @media (min-width: 768px) {
+        .nav > li > a#notactive {
+            color: $theme-dark;
+            &:hover {
+                color: $theme-green;
+            }
+        }
+    }
+}
+
+
+/*
 .navbar-thesale {
     background-color: transparent;
     border-color: transparent;
@@ -232,8 +251,6 @@ aside {
             }
         }
 }
-
-/*
 .navbar-default {
     background-color: transparent;
     border-color: transparent;

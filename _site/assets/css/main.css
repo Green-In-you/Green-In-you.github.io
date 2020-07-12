@@ -150,10 +150,15 @@ aside {
         .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
           color: white; }
       .navbar-default .navbar-collapse {
-        background-color: transparent; }
-      .navbar-default .nav > li > a:hover,
-      .navbar-default .nav > li > a:focus:hover {
-        color: #A1BFAD; }
+        background-color: transparent;
+        position: static;
+        z-index: 0; }
+      .navbar-default .nav > li > a,
+      .navbar-default .nav > li > a:focus {
+        padding-right: 2em; }
+        .navbar-default .nav > li > a:hover,
+        .navbar-default .nav > li > a:focus:hover {
+          color: #A1BFAD; }
       .navbar-default.affix {
         background-color: white;
         border-color: rgba(75, 75, 75, 0.5); }
@@ -170,31 +175,51 @@ aside {
             color: #FFFFFF; } }
 
 .navbar-collapse {
-  background-color: #00b33c; }
+  background-color: #00b33c;
+  position: relative;
+  z-index: 1; }
 
-.navbar-thesale {
-  background-color: transparent;
-  border-color: transparent;
-  height: 10em;
-  padding-top: 3em; }
-  .navbar-thesale .nav > li > a,
-  .navbar-thesale .nav > li > a:focus {
-    font-weight: 700;
-    font-size: 22px;
-    padding-right: 50px; }
-    .navbar-thesale .nav > li > a:hover,
-    .navbar-thesale .nav > li > a:focus:hover {
-      color: #A1BFAD; }
-  .navbar-thesale .nav > li > a#notactive {
+@media (min-width: 768px) {
+  .navbar-blogpost .nav > li > a#notactive {
     color: #4B4B4B; }
-    .navbar-thesale .nav > li > a#notactive:hover {
-      color: #A1BFAD; }
-  .navbar-thesale .nav > li > a#active {
-    color: #A1BFAD; }
-    .navbar-thesale .nav > li > a#active:hover {
-      color: #A1BFAD; }
+    .navbar-blogpost .nav > li > a#notactive:hover {
+      color: #A1BFAD; } }
 
 /*
+.navbar-thesale {
+    background-color: transparent;
+    border-color: transparent;
+    height: 10em;
+    padding-top: 3em;
+
+    .nav {
+        > li {
+            > a,
+            > a:focus {
+                font-weight: 700;
+                font-size: 22px;
+                padding-right: 50px;
+                &:hover {
+                    color: $theme-green;
+                }
+            }
+
+        }
+    }
+    .nav > li > a#notactive {
+            color: $theme-dark;
+            &:hover {
+                color: $theme-green;
+            }
+        }
+
+    .nav > li > a#active {
+            color: $theme-green;
+            &:hover {
+                color: $theme-green;
+            }
+        }
+}
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
