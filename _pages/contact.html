@@ -4,21 +4,17 @@ title: Contact Us
 permalink: /contact/
 ---
 
-<header style="height: 100%; background-image: url({{ "assets/img/homepage_header.png" | relative_url }});">
-    {% include navbar.html navbartype="navbar-default" %}
-    <div class="row">
-        <div class="col-xs-12 col-lg-8 col-lg-offset-2 ">
-            <div class="contact-box" style="padding-left: 2em; padding-right: 2em">
-                <h3 style="font-size: 70px; color: white; font-family: BetterTogether; padding-top: 30px;">Contact</h3>
-                <p style="color: white; font-weight: 300; padding-bottom: 1em;">Ready to donate? Want to join our team? Have a question or just want to say hi? Send us an email by filling out the form
-                below!</p>
-                <input type="email" class="form-control contact-input" placeholder="Email" >
-                <input type="email" class="form-control contact-input" placeholder="Name" >
-                <input type="email" class="form-control contact-input" placeholder="Message" >
-                <button type="button" class="btn-green" style="border-radius: 0; color: white;">SUBMIT</button>
-                <div style="height: 5em;"></div>
-            </div>
+<div class="row">
+    <div class="col-xs-12 col-lg-8 col-lg-offset-2 ">
+        <div class="contact-box" style="padding-left: 2em; padding-right: 2em">
+            <h3 style="font-size: 70px; color: white; font-family: BetterTogether; padding-top: 30px;">Contact</h3>
+            <p style="color: white; font-weight: 300; padding-bottom: 1em;">Ready to donate? Want to join our team? Have a question or just want to say hi? Send us an email by filling out the form
+            below!</p>
+            <input type="email" class="form-control contact-input" id="email" placeholder="Email" >
+            <input type="text" class="form-control contact-input" id="name" placeholder="Name" >
+            <textarea class="form-control  contact-input" rows="4" id="message" placeholder="Message"></textarea>
+            <button type="button" class="btn-green" style="border-radius: 0; color: white;">SUBMIT</button>
+            <div style="height: 5em;"></div>
         </div>
     </div>
-    
-</header>
+</div>

@@ -4,7 +4,11 @@
 {% include head.html %}
 
 <body>
-    {{content}}
+    <header style="background-repeat: no-repeat; background-attachment: scroll; background-image: url({{ "assets/img/homepage_header.png" | relative_url }});">
+        {% include navbar.html navbartype="navbar-default" %}
+        {{content}}
+        <div style="height: 3em;"></div>
+    </header>
     {% include scripts.html %}
 </body>
 
