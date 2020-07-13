@@ -2,7 +2,7 @@
 layout: default
 title: Blog
 permalink: /blog/
-headerurl: "../assets/img/blog_header.png"
+headerurl: "../assets/img/blog_header_cmp.jpg"
 headerptext: ""
 headerh3text: "Blogs"
 ---
@@ -12,9 +12,12 @@ headerh3text: "Blogs"
 
     <div class="col-lg-8 col-lg-offset-2">
         <div style=" padding-bottom: 2em; padding-top: 2em;">
-            <div style="overflow: hidden; height: 12em;">
+            <div>
                 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                {{ post.excerpt }}
+                <div style="overflow: hidden; max-height: 12em; line-height: 2em;">
+                    {{ post.excerpt }}
+                </div>
+                
             </div>
         </div>
     </div>
