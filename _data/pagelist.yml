@@ -1,17 +1,16 @@
 docs:
 
-- title: BLOG
-  url: /blog/
-
 - title: ABOUT
   url: /about/
 
-- title: TEAM
-  url: /team/
-  
 - title: GALLERY
   url: /gallery/
 
+- title: TEAM
+  url: /team/
+
+- title: BLOG
+  url: /blog/
   
 - title: CONTACT
   url: /contact/
