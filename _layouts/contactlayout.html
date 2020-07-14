@@ -4,7 +4,8 @@
 {% include head.html %}
 
 <body>
-    <header style="background-repeat: no-repeat; background-attachment: scroll; background-image: url({{ "assets/img/homepage_header_cmp.jpg" | relative_url }});">
+    <header class="contact-header" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.50), rgba( 
+                  0, 0, 0, 0)), url({{ "assets/img/homepage_header_cmp.jpg" | relative_url }});">
         {% include navbar.html navbartype="navbar-default" %}
         {{content}}
         <div style="height: 3em;"></div>

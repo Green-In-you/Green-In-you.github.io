@@ -384,10 +384,23 @@ aside {
     }
 }
 */
+.header-pbeforeh3 {
+  font-family: Montserrat-Bold;
+  font-size: 30px;
+  margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .header-pbeforeh3 {
+      padding-top: 8em; } }
+
+.contact-header {
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: scroll; }
+
 header {
   position: relative;
   width: 100%;
-  min-height: auto;
+  min-height: 70vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -409,12 +422,11 @@ header {
       margin: 30px auto; }
     header .header-content .header-content-inner p {
       font-weight: 300;
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 16px;
-      margin-bottom: 50px; }
+      color: white;
+      font-size: 16px; }
   @media (min-width: 768px) {
     header {
-      min-height: 100%; }
+      min-height: 100vh; }
       header .header-content {
         position: absolute;
         top: 50%;

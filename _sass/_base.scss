@@ -418,10 +418,24 @@ aside {
 */
 
 // Homepage Header
+.header-pbeforeh3 {
+    font-family: Montserrat-Bold; 
+    font-size: 30px; 
+    margin-bottom: 0;
+    @media (min-width: 768px) {
+        padding-top: 8em;
+    }
+}
+.contact-header {
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
+    min-height: 70vh;
     @include background-cover;
     background-position: center;
     //background-image: url('../img/header.png');
@@ -444,14 +458,13 @@ header {
             }
             p {
                 font-weight: 300;
-                color: rgba(white, .7);
+                color: white;
                 font-size: 16px;
-                margin-bottom: 50px;
             }
         }
     }
     @media (min-width: 768px) {
-        min-height: 100%;
+        min-height: 100vh;
         .header-content {
             position: absolute;
             top: 50%;
