@@ -31,10 +31,6 @@ p {
     justify-content: center; // horizontally center
 }
 
-.center-slide {
-    
-}
-
 .green-h3 {
     color: #A1BFAD;
     margin: 0;
@@ -507,7 +503,7 @@ header {
 .thesale-greenbox {
     //height: 280px; 
     width: 100%; 
-    background-color: #DCEBE2; 
+    background-color: #A1BFAD; 
     padding-right: 3em;
     padding-left: 3em;
     padding-top: 3em;
@@ -674,6 +670,78 @@ header {
 }
 */
 
+//Gallery
+.gallery-container {
+	h1 {
+		text-align: center;
+		margin-top: 50px;
+		font-family: 'Droid Sans', sans-serif;
+		font-weight: bold;
+	}
+	p.page-description {
+		text-align: center;
+		margin: 25px auto;
+		font-size: 18px;
+		color: #999;
+	}
+}
+.tz-gallery {
+	padding: 40px;
+	.row {
+		>div {
+			padding: 2px;
+		}
+	}
+	.lightbox {
+		img {
+			width: 100%;
+			border-radius: 0;
+			position: relative;
+		}
+		&:before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -13px;
+			margin-left: -13px;
+			opacity: 0;
+			color: #fff;
+			font-size: 26px;
+			font-family: 'Glyphicons Halflings';
+			content: '\e003';
+			pointer-events: none;
+			z-index: 9000;
+			transition: 0.4s;
+		}
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			background-color: rgba(46, 132, 206, 0.7);
+			content: '';
+			transition: 0.4s;
+		}
+		&:hover {
+			&:after {
+				opacity: 1;
+			}
+			&:before {
+				opacity: 1;
+			}
+		}
+	}
+}
+.baguetteBox-button {
+	background-color: transparent !important;
+}
+
+.thumbnail {
+	margin-bottom:7px;
+}
+
 // Extras
 // -- Highlight Color Customization
 ::-moz-selection {
@@ -694,27 +762,27 @@ header {
 }
 
 .img-shadow-left {
-    box-shadow: -70px 5px 0px 15px #F7FCF9;
+    box-shadow: -70px 5px 0px 15px #DCEBE2;
 }
 
 .img-shadow-right {
-    box-shadow: 75px -10px 0px 35px #F7FCF9;
+    box-shadow: 75px -10px 0px 35px #DCEBE2;
 }
 
 .img-shadow-howitworks {
-    box-shadow: 30px -30px 0px 8px #F7FCF9;
+    box-shadow: 30px -30px 0px 8px #DCEBE2;
 }
 
 .img-shadow-aboutus {
-    box-shadow: -70px 5px 0px 30px #F7FCF9;
+    box-shadow: -70px 5px 0px 30px #DCEBE2;
 }
 
 .img-shadow-team {
-    box-shadow: -40px 0px 0px 15px #F7FCF9;
+    box-shadow: -40px 0px 0px 15px #DCEBE2;
 }
 
 .img-shadow-right-team {
-    box-shadow: 75px -10px 0px 35px #F7FCF9;
+    box-shadow: 75px -10px 0px 35px #DCEBE2;
 }
 
 .img-shadow-team-positions {
