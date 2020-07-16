@@ -47,7 +47,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header ">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1">
+                data-target="#bs-example-navbar-collapse-1" onclick="openNav()">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -63,8 +63,8 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right text-center">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
                 
                     
                         <li><a href="/about/" id="notactive">ABOUT</a></li>
@@ -89,7 +89,44 @@
             </ul>
         </div>
         <!-- /.navbar-collapse -->
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="nav navbar-nav navbar-right text-center">
+                
+                    
+                        <li><a href="/about/" id="notactive">ABOUT</a></li>
+                    
+                
+                    
+                        <li><a href="/gallery/" id="notactive">GALLERY</a></li>
+                    
+                
+                    
+                        <li><a href="/team/" id="notactive">TEAM</a></li>
+                    
+                
+                    
+                        <li><a href="/blog/" id="notactive">BLOG</a></li>
+                    
+                
+                    
+                        <li><a href="/contact/" id="active">CONTACT</a></li>
+                    
+                
+            </ul>
+        </div>
     </nav>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
     <!-- /.container-fluid -->
 </div>
         <div class="row">
