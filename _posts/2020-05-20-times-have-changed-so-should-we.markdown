@@ -4,8 +4,9 @@ title:  "Times have changed, so should we"
 date:   2020-05-20 15:32:34 +0530
 categories: sustainability
 author: Tanisha Ghorpade
-imglink: "../assets/img/fernando_lavin_fi5YSQfxbVk_uns.png"
+imglink: "../assets/img/Post1.jpg"
 ---
+
 I’ve observed second-hand clothing is still visualized as ragged, dirty clothing. This image may have been true in the past when apparel was purchased by the customer and then disposed after rigorous use.
 
 However, today, people’s shopping habits have extensively changed because of stimuli from the fashion giants. The fashion industry nurtures consumerism. They introduced fast-fashion where brands like H&M, Forever21 and Zara among others have as many as 52 seasons in a year. This is far off from the initial three seasons brands had, in which styles would change as per the summer, winter and monsoon.

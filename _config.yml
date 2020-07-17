@@ -40,6 +40,9 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  posts: 
+    output: true
+    permalink: /:collection/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.

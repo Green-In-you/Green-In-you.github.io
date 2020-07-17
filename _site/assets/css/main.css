@@ -38,7 +38,7 @@ p {
   font-size: 16px;
   color: #707070;
   font-family: Chivo-Regular;
-  margin-bottom: 0px; }
+  margin-bottom: 16px; }
 
 .slide {
   min-height: 100vh;
@@ -200,6 +200,18 @@ a:hover {
   text-decoration: none;
   color: #A1BFAD; }
 
+.blog-p {
+  line-height: 2em;
+  margin-bottom: 32px; }
+
+.blogpost-title {
+  font-family: Prata-Regular;
+  color: #A1BFAD;
+  font-size: 32px; }
+  @media (min-width: 768px) {
+    .blogpost-title {
+      font-size: 64px; } }
+
 .contact-header {
   height: auto;
   background-repeat: no-repeat;
@@ -311,10 +323,10 @@ header {
   background-color: #A1BFAD;
   color: white;
   letter-spacing: 1px;
-  font-family: Chivo-Regular;
-  font-size: 20px;
+  font-family: Montserrat-Bold;
   font-weight: 400;
-  height: 50px; }
+  height: 50px;
+  width: 150px; }
 
 .gallery-container h1 {
   text-align: center;

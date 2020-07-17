@@ -21,7 +21,7 @@ p {
     font-size:16px;
     color:#707070;
     font-family: Chivo-Regular;
-    margin-bottom: 0px;
+    margin-bottom: 16px;
 }
 
 .slide {
@@ -221,6 +221,20 @@ a:hover {
     color: $theme-green;
 }
 
+.blog-p {
+    line-height: 2em;
+    margin-bottom: 32px;
+}
+
+.blogpost-title {
+    font-family: Prata-Regular;
+    color: #A1BFAD;
+    font-size: 32px;
+    @media (min-width: 768px) {
+        font-size: 64px;
+    }
+}
+
 
 // Homepage Header
 .contact-header {
@@ -357,11 +371,10 @@ header {
     background-color:#A1BFAD;
     color: white;
     letter-spacing: 1px;
-    font-family: Chivo-Regular;
-    font-size: 20px;
+    font-family: Montserrat-Bold;
     font-weight: 400;
     height: 50px;
-    
+    width: 150px;
 }
 
 // Contact
