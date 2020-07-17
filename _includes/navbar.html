@@ -13,7 +13,7 @@
 
             <div style="padding-left: 5em;">
                 <a href="{{'../' | relative_url }}">
-                    <img alt="Qries" src="{{'../assets/img/giy-logo/Asset 8@2x.png' | relative_url }}" width="100px">
+                    <img alt="Qries" src="{{'../assets/img/giy-logo/Asset 8@2x.png' | relative_url }}" width="70px">
                 </a>
             </div>
             
@@ -49,11 +49,16 @@
 
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            if (document.getElementById("mySidenav").style.width != "250px") {
+                document.getElementById("mySidenav").style.width = "250px";
+            } else {
+                closeNav();
+            }
+
         }
 
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.width = "0px";
         }
     </script>
     <!-- /.container-fluid -->

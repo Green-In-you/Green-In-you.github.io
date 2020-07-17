@@ -55,7 +55,7 @@
 
             <div style="padding-left: 5em;">
                 <a href="/">
-                    <img alt="Qries" src="/assets/img/giy-logo/Asset%208@2x.png" width="100px">
+                    <img alt="Qries" src="/assets/img/giy-logo/Asset%208@2x.png" width="70px">
                 </a>
             </div>
             
@@ -119,11 +119,16 @@
 
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            if (document.getElementById("mySidenav").style.width != "250px") {
+                document.getElementById("mySidenav").style.width = "250px";
+            } else {
+                closeNav();
+            }
+
         }
 
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.width = "0px";
         }
     </script>
     <!-- /.container-fluid -->
@@ -132,7 +137,7 @@
             <div class="header-content-inner">
                 
                 <h1 style="font-family: BetterTogether;"></h1>
-                <p style="font-family: Montserrat-Bold; font-size: 30px;"></p>
+                <p style="font-family: BetterTogether;"></p>
                 
             </div>
     </div>
@@ -159,13 +164,13 @@
 </div>
 
     <div class="row" style="padding-bottom: 5em; padding-top: 5em;">
-    <div class="col-lg-4 col-lg-offset-1 col-xs-12 lg-left-p text-center" style="padding-bottom: 2em;">
+    <div class="col-lg-4 col-lg-offset-1 col-xs-12 lg-left-p text-center" style="padding-bottom: 2em; padding-top: 2em;">
         <p class="footer-p"> Subscribe to our mailing list</p>
         <p class="footer-p"> Be the first to get notified about our sales, workshops, locations of our collection camps, and more! You're on your way to a greener you.</p>
     </div>
     
     <div class="col-lg-2 col-lg-offset-1 col-xs-12 lg-left-p text-center" style="padding-bottom: 2em;">
-        <h3 class="footer-p" style="padding-bottom: 1em">Follow us on</h3>
+        <h3 class="title" >Follow us on</h3>
         <a href='https://www.facebook.com/GreenInYou/' style="padding-right: 10px;">
             <img src="/assets/img/facebook.png" alt="Facebook" class="footer-icon">
         </a>
@@ -182,7 +187,7 @@
 
     <div class="row">
         <div class="col-lg-2 col-lg-offset-1 col-xs-12 lg-left-p text-center">
-            <h3 class="footer-p" style="padding-bottom: 1em">Connect</h3>
+            <h3 class="title">Connect</h3>
             <a href='/contact'>
                 <p class="footer-p">Contact Us</p>
             </a>

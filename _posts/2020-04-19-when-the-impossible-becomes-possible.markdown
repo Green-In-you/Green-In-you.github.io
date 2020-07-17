@@ -3,6 +3,7 @@ layout: posts
 title:  "When the impossible becomes possible"
 date:   2020-04-19 15:32:34 +0530
 categories: sustainability
+author: Tanisha Ghorpade
 ---
 It was 1907, and synthetic plastic was invented. However, it was only later until the
 1930s during the industrial era that plastic was commercially, widely available. I think

@@ -13,6 +13,12 @@
 @font-face {
   font-family: "AvenirNext";
   src: url("../fonts/AvenirNext.ttc"); }
+@font-face {
+  font-family: "Prata-Regular";
+  src: url("../fonts/Prata-Regular.ttf"); }
+@font-face {
+  font-family: "Chivo-Regular";
+  src: url("../fonts/Chivo-Regular.ttf"); }
 html,
 body {
   height: 100%;
@@ -29,9 +35,10 @@ body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
 
 p {
-  font-size: 18px;
-  font-weight: 300;
-  color: #707070; }
+  font-size: 16px;
+  color: #707070;
+  font-family: Chivo-Regular;
+  margin-bottom: 0px; }
 
 .slide {
   min-height: 100vh;
@@ -39,6 +46,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media (min-width: 768px) {
+    .slide {
+      min-height: 75vh; } }
 
 .green-h3 {
   color: #A1BFAD;
@@ -183,13 +193,12 @@ p {
     .navbar-blogpost .nav > li > a#notactive:hover {
       color: #A1BFAD; } }
 
-.header-pbeforeh3 {
-  font-family: Montserrat-Bold;
-  font-size: 30px;
-  margin-bottom: 0; }
-  @media (min-width: 768px) {
-    .header-pbeforeh3 {
-      padding-top: 8em; } }
+a {
+  color: #A1BFAD; }
+
+a:hover {
+  text-decoration: none;
+  color: #A1BFAD; }
 
 .contact-header {
   height: auto;
@@ -249,6 +258,11 @@ header {
   line-height: 44px;
   color: #4B4B4B; }
 
+.title {
+  font-family: Prata-Regular;
+  font-size: 32px;
+  color: #4B4B4B; }
+
 .section-heading-letterspaced {
   font-family: Montserrat-Bold;
   font-size: 22px;
@@ -297,10 +311,10 @@ header {
   background-color: #A1BFAD;
   color: white;
   letter-spacing: 1px;
-  font-family: Montserrat-Bold;
+  font-family: Chivo-Regular;
+  font-size: 20px;
   font-weight: 400;
-  height: 50px;
-  width: 150px; }
+  height: 50px; }
 
 .gallery-container h1 {
   text-align: center;

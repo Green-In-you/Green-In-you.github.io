@@ -54,7 +54,7 @@
 
             <div style="padding-left: 5em;">
                 <a href="/">
-                    <img alt="Qries" src="/assets/img/giy-logo/Asset%208@2x.png" width="100px">
+                    <img alt="Qries" src="/assets/img/giy-logo/Asset%208@2x.png" width="70px">
                 </a>
             </div>
             
@@ -118,24 +118,37 @@
 
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            if (document.getElementById("mySidenav").style.width != "250px") {
+                document.getElementById("mySidenav").style.width = "250px";
+            } else {
+                closeNav();
+            }
+
         }
 
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.width = "0px";
         }
     </script>
     <!-- /.container-fluid -->
 </div>
 
-    <div class="container-fluid" style="padding-left: 2em; padding-right: 2em; padding-top: 2em;">
+    <div class="container-fluid" style="padding: 2em 2em 0em 2em;">
         <div class="col-lg-8 col-lg-offset-2">
-            <div style="padding-bottom: 5em;">
+            <div>
                 <div class="text-center" style="padding-bottom: 3em;">
-                    <h1>Times have changed, so should we</h1>
+                    <h3 class="title" style="color: #A1BFAD; font-size: 64px;">Times have changed, so should we</h3>
+                    <div>
+                        <p>20 May 2020 | By Tanisha Ghorpade</p>
+                    </div>
+                    
+                </div>
+                <div class="text-center" style="padding-bottom: 5em;">
+                    <img src="/assets/img/fernando_lavin_fi5YSQfxbVk_uns.png">
                 </div>
                 
-                <p>I’ve observed second-hand clothing is still visualized as ragged, dirty clothing. This image may have been true in the past when apparel was purchased by the customer and then disposed after rigorous use.</p>
+                <div>
+                    <p>I’ve observed second-hand clothing is still visualized as ragged, dirty clothing. This image may have been true in the past when apparel was purchased by the customer and then disposed after rigorous use.</p>
 
 <p>However, today, people’s shopping habits have extensively changed because of stimuli from the fashion giants. The fashion industry nurtures consumerism. They introduced fast-fashion where brands like H&amp;M, Forever21 and Zara among others have as many as 52 seasons in a year. This is far off from the initial three seasons brands had, in which styles would change as per the summer, winter and monsoon.</p>
 
@@ -146,11 +159,11 @@ wants to appreciate and enjoy fashion in harmony with nature!</p>
 
 <p>Times have changed, so should we.</p>
 
-<p>-Tanisha Ghorpade</p>
-
+                </div>
+                
             </div>
         
-            <div>        
+            <div style="padding-top: 5em;">        
                 
                 
                 
@@ -173,31 +186,18 @@ plastic.</p>
             
                 
                 
-                
-            
-                <div style=" padding-bottom: 2em; padding-top: 2em;">
-                    <h2><a href="/jekyll/update/2020/03/19/welcome-to-jekyll.html">Welcome to Jekyll!</a></h2>
-                    <div style="overflow: hidden; max-height: 12em; line-height: 2em;">
-                        <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-
-                    </div>
-                </div>
-            
-                
-                
             </div>
         </div>
     </div>
 
     <div class="row" style="padding-bottom: 5em; padding-top: 5em;">
-    <div class="col-lg-4 col-lg-offset-1 col-xs-12 lg-left-p text-center" style="padding-bottom: 2em;">
+    <div class="col-lg-4 col-lg-offset-1 col-xs-12 lg-left-p text-center" style="padding-bottom: 2em; padding-top: 2em;">
         <p class="footer-p"> Subscribe to our mailing list</p>
         <p class="footer-p"> Be the first to get notified about our sales, workshops, locations of our collection camps, and more! You're on your way to a greener you.</p>
     </div>
     
     <div class="col-lg-2 col-lg-offset-1 col-xs-12 lg-left-p text-center" style="padding-bottom: 2em;">
-        <h3 class="footer-p" style="padding-bottom: 1em">Follow us on</h3>
+        <h3 class="title" >Follow us on</h3>
         <a href='https://www.facebook.com/GreenInYou/' style="padding-right: 10px;">
             <img src="/assets/img/facebook.png" alt="Facebook" class="footer-icon">
         </a>
@@ -214,7 +214,7 @@ plastic.</p>
 
     <div class="row">
         <div class="col-lg-2 col-lg-offset-1 col-xs-12 lg-left-p text-center">
-            <h3 class="footer-p" style="padding-bottom: 1em">Connect</h3>
+            <h3 class="title">Connect</h3>
             <a href='/contact'>
                 <p class="footer-p">Contact Us</p>
             </a>

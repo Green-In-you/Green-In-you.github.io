@@ -55,7 +55,7 @@
 
             <div style="padding-left: 5em;">
                 <a href="/">
-                    <img alt="Qries" src="/assets/img/giy-logo/Asset%208@2x.png" width="100px">
+                    <img alt="Qries" src="/assets/img/giy-logo/Asset%208@2x.png" width="70px">
                 </a>
             </div>
             
@@ -119,11 +119,16 @@
 
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            if (document.getElementById("mySidenav").style.width != "250px") {
+                document.getElementById("mySidenav").style.width = "250px";
+            } else {
+                closeNav();
+            }
+
         }
 
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.width = "0px";
         }
     </script>
     <!-- /.container-fluid -->
@@ -132,7 +137,7 @@
             <div class="header-content-inner">
                 
                 <h1 style="font-family: BetterTogether;">Our Vision</h1>
-                <p style="font-family: Montserrat-Bold; font-size: 30px;">To facilitate sustainable consumerism in urban India</p>
+                <p style="font-family: BetterTogether;">To facilitate sustainable consumerism in urban India</p>
                 
             </div>
     </div>
@@ -142,9 +147,9 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
 
-                <h3 class="section-heading-letterspaced">Vision</h3>
+                <h3 class="title">Vision</h3>
                 <p>To facilitate sustainable consumerism in urban India</p>
-                <h3 class="section-heading-letterspaced">Mission</h3>
+                <h3 class="title">Mission</h3>
                 <p>We aim to create a community which enables socializing, networking, learning, developing professionally and most
                 importantly, empowering individuals to lead sustainable lifestyles. As we work towards our primary mission, we also seek
                 to bridge inter- and intra-generational financial, material and intellectual resource gaps within our community.</p>
@@ -161,7 +166,7 @@
         <div class="row" style="padding-top: 5em;">
             
             <div class="col-lg-8 col-lg-offset-2 col-xs-12">
-                <h2 class="green-h3" style="color: black; padding-bottom: 1em;"> OUR IMPACTS</h2>
+                <h3 class="title" style="padding-bottom: 1em;"> OUR IMPACTS</h3>
                 <p>Through setting up Green In You, we were able to encourage people from a strata of the society who never in their lives
                 had shopped secondhand. They now enthusiastically come out to normalize reusing clothes. We built a respectable
                 environment which destigmatized secondhand shopping and sowed a seed for fighting against the second largest polluter in
@@ -184,7 +189,7 @@
         <div class="row">
             <div class="col-xs-12 col-lg-4 col-lg-offset-2 text-center">
     
-                <h3 class="section-heading" style="font-size: 38px; padding-bottom: 1em;">Let’s work together!</h3>
+                <h3 class="title" style="padding-bottom: 1em;">Let’s work together!</h3>
                 <p>Our team is dedicated to empower urban India to lead sustainable lifestyles. We want to make the world a
                     greener and
                     better place to live in for everyone.</p>
@@ -206,20 +211,20 @@
     <div class="slide">
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3 text-center">
-                <h2 style="font-size: 38px; font-weight: 600;">Sustainable fashion is not just for the lower socio- economic class, it is for every conscious individual who wants to appreciate and enjoy fashion in harmony with nature!</h2 style="font-size: 40px; font-weight: 600;">
+                <h2 class="title" style="font-weight: 600;">Sustainable fashion is not just for the lower socio- economic class, it is for every conscious individual who wants to appreciate and enjoy fashion in harmony with nature!</h2>
             </div>
             
         </div>
     </div>
 </div>
     <div class="row" style="padding-bottom: 5em; padding-top: 5em;">
-    <div class="col-lg-4 col-lg-offset-1 col-xs-12 lg-left-p text-center" style="padding-bottom: 2em;">
+    <div class="col-lg-4 col-lg-offset-1 col-xs-12 lg-left-p text-center" style="padding-bottom: 2em; padding-top: 2em;">
         <p class="footer-p"> Subscribe to our mailing list</p>
         <p class="footer-p"> Be the first to get notified about our sales, workshops, locations of our collection camps, and more! You're on your way to a greener you.</p>
     </div>
     
     <div class="col-lg-2 col-lg-offset-1 col-xs-12 lg-left-p text-center" style="padding-bottom: 2em;">
-        <h3 class="footer-p" style="padding-bottom: 1em">Follow us on</h3>
+        <h3 class="title" >Follow us on</h3>
         <a href='https://www.facebook.com/GreenInYou/' style="padding-right: 10px;">
             <img src="/assets/img/facebook.png" alt="Facebook" class="footer-icon">
         </a>
@@ -236,7 +241,7 @@
 
     <div class="row">
         <div class="col-lg-2 col-lg-offset-1 col-xs-12 lg-left-p text-center">
-            <h3 class="footer-p" style="padding-bottom: 1em">Connect</h3>
+            <h3 class="title">Connect</h3>
             <a href='/contact'>
                 <p class="footer-p">Contact Us</p>
             </a>

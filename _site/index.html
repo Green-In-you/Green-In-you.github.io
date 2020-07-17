@@ -39,7 +39,7 @@
 </head>
 <body>
     <header class="header-bg" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.50), rgba( 
-                  0, 0, 0, 0)), url(/assets/img/homepage_header_cmp.jpg);">
+                  0, 0, 0, 0)), url(/assets/img/landingpage_header.jpg);">
     <div class="container-fluid">
     <nav class="navbar-default navbar-static-top">
     
@@ -55,7 +55,7 @@
 
             <div style="padding-left: 5em;">
                 <a href="/">
-                    <img alt="Qries" src="/assets/img/giy-logo/Asset%208@2x.png" width="100px">
+                    <img alt="Qries" src="/assets/img/giy-logo/Asset%208@2x.png" width="70px">
                 </a>
             </div>
             
@@ -119,11 +119,16 @@
 
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            if (document.getElementById("mySidenav").style.width != "250px") {
+                document.getElementById("mySidenav").style.width = "250px";
+            } else {
+                closeNav();
+            }
+
         }
 
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.width = "0px";
         }
     </script>
     <!-- /.container-fluid -->
@@ -131,7 +136,7 @@
     <div class="header-content">
             <div class="header-content-inner">
                 
-                <p class="header-pbeforeh3">unleash the</p>
+                <p style="font-family: BetterTogether;">unleash the</p>
                 <h1 style="font-family: BetterTogether;">Green in you</h1>
                 
             </div>
@@ -142,7 +147,7 @@
         <div class="row">
             <div class="col-lg-4 col-lg-offset-2 text-center" style="padding-top: 3em;">
 
-                <h3 class="section-heading-letterspaced">TANISHA GHORPADE</h3>
+                <h3 class="title">TANISHA GHORPADE</h3>
 
                 <p style="font-size: 15px;"> “Team Green primarily works to eradicate any stigma associated with reusing clothes. Secondhand clothing or as we call
                 it, sustainable fashion is for anyone who wants to appreciate and enjoy fashion in harmony with nature. Through our
@@ -161,12 +166,12 @@
 
     <div class="slide">
         <div class="row">
-            <div class="hidden-xs col-sm-4 col-sm-offset-1 image-container" style="padding-top:2em;">
+            <div class="hidden-xs col-lg-4 col-lg-offset-2  image-container" style="padding-top:2em;">
                 <img class="img-shadow-left" src="/assets/img/fernando_lavin_fi5YSQfxbVk_uns@2x.png" style="height:25em;" />
             </div>
 
             <div class="col-lg-4 col-lg-offset-1 text-center">
-                <h3 class="section-heading">Your wardrobe is full of possibilities</h3>
+                <h3 class="title">Your wardrobe is full of possibilities</h3>
                 <p style="padding-bottom: 30px;">Greening your closet can make a world of an impact. Play your part in a green fashion and lifestyle revolution. Our
                 platform provides an avenue for conscious consumption. We have an eye for curating great preloved styles and offer a
                 variety of everyday eco-friendly products. We’re here to help you live more sustainably and to help you do your part in
@@ -196,7 +201,7 @@
     <div class="slide">
         <div class="row">
             <div class="text-center">
-                <p style="font-size: 3em; padding-bottom: 1em;"> What can I donate?</p>
+                <h3 class="title" style="padding-bottom: 1em;">What can I donate?</h3>
             </div>
             <div>
                 <img src="../assets/img/whatwecando/Asset 2.png" style="width:150px; padding-left: 2em;">
@@ -227,12 +232,12 @@
     <div class="slide">
         <div class="row">
             <div class="col-xs-12 col-lg-4 col-lg-offset-2 text-center">
-                <h3>WE ORGANIZE</h3>
+                <h3 class="title">WE ORGANIZE</h3>
                 <p>We will do all the hard work so you don’t have to!</p>
                 <p>We’ll sanitize the stock and check for quality.</p>
                 <p>We will also prepare the snacks, bring in the photobooth, find the right music and set the right vibe.</p>
                 <p>And when we’re ready, all you will have to do is have a fabulous time!</p>
-                <h3>YOU SHOP</h3>
+                <h3 class="title">YOU SHOP</h3>
                 <p>Shop it like it’s hot.</p>
                 <p>If everyone invested in just one pre-used clothing item this year, we would save approximately 270 crore kilograms of
                 carbon emissions. With our points system it’s easy and rewarding so you’ll be buying more with less. Also, while you’re
@@ -249,7 +254,7 @@
         <div class="row">
             <div class="col-xs-10  col-xs-offset-1 col-lg-4 col-lg-offset-2 text-center">
         
-                <h3 class="section-heading" style="font-size: 38px; padding-bottom: 1em;">Let’s work together!</h3>
+                <h3 class="title" style="padding-bottom: 1em;">Let’s work together!</h3>
                 <p>Our team is dedicated to empower urban India to lead sustainable lifestyles. We want to make the world a greener and
                 better place to live in for everyone.</p>
                 <p style="padding-bottom: 1em;">We're always looking for individuals as well as organizations who believe in our vision and want to work with us towards
@@ -266,13 +271,13 @@
 </div>
 
     <div class="row" style="padding-bottom: 5em; padding-top: 5em;">
-    <div class="col-lg-4 col-lg-offset-1 col-xs-12 lg-left-p text-center" style="padding-bottom: 2em;">
+    <div class="col-lg-4 col-lg-offset-1 col-xs-12 lg-left-p text-center" style="padding-bottom: 2em; padding-top: 2em;">
         <p class="footer-p"> Subscribe to our mailing list</p>
         <p class="footer-p"> Be the first to get notified about our sales, workshops, locations of our collection camps, and more! You're on your way to a greener you.</p>
     </div>
     
     <div class="col-lg-2 col-lg-offset-1 col-xs-12 lg-left-p text-center" style="padding-bottom: 2em;">
-        <h3 class="footer-p" style="padding-bottom: 1em">Follow us on</h3>
+        <h3 class="title" >Follow us on</h3>
         <a href='https://www.facebook.com/GreenInYou/' style="padding-right: 10px;">
             <img src="/assets/img/facebook.png" alt="Facebook" class="footer-icon">
         </a>
@@ -289,7 +294,7 @@
 
     <div class="row">
         <div class="col-lg-2 col-lg-offset-1 col-xs-12 lg-left-p text-center">
-            <h3 class="footer-p" style="padding-bottom: 1em">Connect</h3>
+            <h3 class="title">Connect</h3>
             <a href='/contact'>
                 <p class="footer-p">Contact Us</p>
             </a>

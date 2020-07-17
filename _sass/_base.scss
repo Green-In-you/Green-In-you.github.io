@@ -18,9 +18,10 @@ body {
 }
 
 p {
-    font-size:18px;
-    font-weight:300;
+    font-size:16px;
     color:#707070;
+    font-family: Chivo-Regular;
+    margin-bottom: 0px;
 }
 
 .slide {
@@ -29,6 +30,9 @@ p {
     display: flex;
     align-items: center;  // vertically center
     justify-content: center; // horizontally center
+    @media (min-width: 768px) {
+        min-height: 75vh;
+    }
 }
 
 .green-h3 {
@@ -207,15 +211,18 @@ p {
     }
 }
 
-// Homepage Header
-.header-pbeforeh3 {
-    font-family: Montserrat-Bold; 
-    font-size: 30px; 
-    margin-bottom: 0;
-    @media (min-width: 768px) {
-        padding-top: 8em;
-    }
+//Blog
+a {
+    color: $theme-green;
 }
+
+a:hover {
+    text-decoration: none;
+    color: $theme-green;
+}
+
+
+// Homepage Header
 .contact-header {
     height: auto;
     background-repeat: no-repeat;
@@ -286,6 +293,12 @@ header {
     color:#4B4B4B;
 }
 
+.title {
+    font-family: Prata-Regular;
+    font-size: 32px;
+    color:#4B4B4B;
+}
+
 .section-heading-letterspaced {
     font-family: Montserrat-Bold;
     font-size: 22px;
@@ -344,10 +357,11 @@ header {
     background-color:#A1BFAD;
     color: white;
     letter-spacing: 1px;
-    font-family: Montserrat-Bold;
+    font-family: Chivo-Regular;
+    font-size: 20px;
     font-weight: 400;
     height: 50px;
-    width: 150px;
+    
 }
 
 // Contact

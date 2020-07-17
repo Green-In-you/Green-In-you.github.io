@@ -3,6 +3,8 @@ layout: posts
 title:  "Times have changed, so should we"
 date:   2020-05-20 15:32:34 +0530
 categories: sustainability
+author: Tanisha Ghorpade
+imglink: "../assets/img/fernando_lavin_fi5YSQfxbVk_uns.png"
 ---
 I’ve observed second-hand clothing is still visualized as ragged, dirty clothing. This image may have been true in the past when apparel was purchased by the customer and then disposed after rigorous use.
 
@@ -14,5 +16,3 @@ If these barely used clothes are still in their prime condition, they really sho
 wants to appreciate and enjoy fashion in harmony with nature!
 
 Times have changed, so should we.
-
--Tanisha Ghorpade
