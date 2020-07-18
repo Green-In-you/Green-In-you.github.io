@@ -36,6 +36,11 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul class="nav navbar-nav navbar-right text-center">
+                {% if page.url == "/" %}
+                    <li><a href="{{ "/" | relative_url}}" id="active">HOME</a></li>
+                    {% else %}
+                    <li><a href="{{ "/" | relative_url}}" id="notactive">HOME</a></li>
+                {% endif %}
                 {% for item in site.data.pagelist.docs %}
                     {% if page.url == item.url %}
                         <li><a href="{{ item.url | relative_url}}" id="active">{{ item.title }}</a></li>

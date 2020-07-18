@@ -42,13 +42,10 @@ p {
 
 .slide {
   min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  width: 100%; }
   @media (min-width: 768px) {
     .slide {
-      min-height: 75vh; } }
+      min-height: 40vh; } }
 
 .green-h3 {
   color: #A1BFAD;
@@ -60,13 +57,37 @@ p {
   color: #707070;
   padding-top: 15px; }
 
-.team-p {
-  font-family: Montserrat-Medium;
-  color: #4B4B4B; }
+.join-team {
+  margin: auto;
+  height: 12em;
+  width: 75%;
+  background-color: #A1BFAD; }
 
-.team-p2 {
-  font-family: Montserrat-Medium;
-  color: #707070; }
+.team-positions {
+  height: 12em;
+  width: 70%;
+  background-color: #A1BFAD; }
+
+.team-h4 {
+  font-family: Montserrat-SemiBold;
+  padding-top: 2em; }
+
+.team-greenbox {
+  width: 100%;
+  background-color: #A1BFAD;
+  padding-right: 3em;
+  padding-left: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em; }
+
+.team-positions-greenbox {
+  height: 250px;
+  width: 320px;
+  background-color: #DCEBE2; }
+
+@media (min-width: 768px) {
+  .team-positions-div-container {
+    padding-left: 10%; } }
 
 @media (min-width: 768px) {
   .lg-left-p {
@@ -273,7 +294,8 @@ header {
 .title {
   font-family: Prata-Regular;
   font-size: 32px;
-  color: #4B4B4B; }
+  color: #4B4B4B;
+  padding-bottom: 1em; }
 
 .section-heading-letterspaced {
   font-family: Montserrat-Bold;
@@ -290,24 +312,10 @@ header {
   padding-top: 3em;
   padding-bottom: 3em; }
 
-.team-greenbox {
-  width: 100%;
-  background-color: #DCEBE2;
-  padding-right: 3em;
-  padding-left: 3em;
-  padding-top: 3em;
-  padding-bottom: 3em; }
-
-.team-positions-greenbox {
-  height: 250px;
-  width: 320px;
-  background-color: #DCEBE2; }
-
 .contact-box {
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
-  width: 100%;
-  opacity: 0.7; }
+  width: 100%; }
 
 .contact-input {
   border-radius: 0;
