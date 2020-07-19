@@ -56,20 +56,26 @@ p {
 .join-team {
   margin: auto;
   height: 12em;
-  width: 70%;
+  width: 75%;
   max-width: 18em;
   background-color: #A1BFAD; }
+
+.join-team-text {
+  margin: auto;
+  height: 12em;
+  width: 75%;
+  max-width: 18em; }
 
 .team-positions {
   margin: auto;
   height: 12em;
-  width: 70%;
+  width: 75%;
   max-width: 18em;
   background-color: #A1BFAD; }
 
 .team-positions-text {
   margin: auto;
-  width: 70%;
+  width: 75%;
   max-width: 18em; }
 
 .team-h4 {
