@@ -40,9 +40,6 @@ p {
   font-family: Chivo-Regular;
   margin-bottom: 16px; }
 
-.slide {
-  width: 100%; }
-
 .green-h3 {
   color: #A1BFAD;
   margin: 0; }
@@ -62,7 +59,6 @@ p {
 
 .join-team-text {
   margin: auto;
-  height: 12em;
   width: 75%;
   max-width: 18em; }
 
