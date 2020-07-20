@@ -5,12 +5,25 @@
 
 <body>
     <header class="contact-header" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.50), rgba( 
-                  0, 0, 0, 0)), url({{ "assets/img/homepage_header_cmp.jpg" | relative_url }});">
+                  0, 0, 0, 0)), url({{ "assets/img/headers/landingpage_header_sm.jpg" | relative_url }});">
         {% include navbar.html navbartype="navbar-default" %}
         {{content}}
-        <div style="height: 3em;"></div>
     </header>
     {% include scripts.html %}
 </body>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx-C-U8iOW9qqmQnnwHRgKSESwng6s3lLt5gbgZ2AGhwjus0DA_/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => console.log('Success!', response))
+            .then(form.reset())
+            .then(alert("Your form has been submitted. We will get in touch as soon as possible."))
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
 
 </html>

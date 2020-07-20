@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <title>Green In You</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,14 +39,14 @@
 </head>
 <body>
     <header class="header-bg" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.50), rgba( 
-                  0, 0, 0, 0)), url(/assets/img/ourteam_header_cmp.jpg);">
+                  0, 0, 0, 0)), url(/assets/img/headers/ourteam_header_sm.jpg);">
     <div class="container-fluid">
     <nav class="navbar-default navbar-static-top">
     
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header ">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1">
+                data-target="#bs-example-navbar-collapse-1" onclick="openNav()">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -55,15 +55,15 @@
 
             <div style="padding-left: 5em;">
                 <a href="/">
-                    <img alt="Qries" src="/assets/img/giy-logo/Asset%208@2x.png" width="100px">
+                    <img alt="Qries" src="/assets/img/giy-logo/Asset%208@2x.png" width="70px">
                 </a>
             </div>
             
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right text-center">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
                 
                     
                         <li><a href="/about/" id="notactive">ABOUT</a></li>
@@ -88,188 +88,233 @@
             </ul>
         </div>
         <!-- /.navbar-collapse -->
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="nav navbar-nav navbar-right text-center">
+                
+                    <li><a href="/" id="notactive">HOME</a></li>
+                
+                
+                    
+                        <li><a href="/about/" id="notactive">ABOUT</a></li>
+                    
+                
+                    
+                        <li><a href="/gallery/" id="notactive">GALLERY</a></li>
+                    
+                
+                    
+                        <li><a href="/team/" id="active">TEAM</a></li>
+                    
+                
+                    
+                        <li><a href="/blog/" id="notactive">BLOG</a></li>
+                    
+                
+                    
+                        <li><a href="/contact/" id="notactive">CONTACT</a></li>
+                    
+                
+            </ul>
+        </div>
     </nav>
+
+    <script>
+        function openNav() {
+            if (document.getElementById("mySidenav").style.width != "250px") {
+                document.getElementById("mySidenav").style.width = "250px";
+            } else {
+                closeNav();
+            }
+
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0px";
+        }
+    </script>
     <!-- /.container-fluid -->
 </div>
     <div class="header-content">
             <div class="header-content-inner">
                 
-                <h1 style="font-family: BetterTogether;">Team</h1>
-                <p style="font-family: Montserrat-Bold; font-size: 30px;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <h1 style="font-family: Prata-Regular">Team</h1>
+                    <p style="font-family: Prata-Regular"></p>
                 
             </div>
     </div>
 </header>
     <div class="container-fluid">
-    <div class="slide">
-        <div class="row" style="padding-top: 1em;">
-            <div class="col-xs-12">
-                <p class="text-center team-p">What does it mean to be a part of Green In You?</p>
-                <p class="text-center team-p2">You will receive support to fuel your professional development. You will own your creations. You will make an impact.</p>
-                <p class="text-center team-p">Ways to join</p>
-                <p class="text-center team-p2">How do you want to contribute to our vision of creating a sustainable fashion community?</p>
-            </div>
+    <div class="row" style="padding-top: 8em;">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+            <h3 class="title">What does it mean to be a part of<span class="title" style="color: #A1BFAD;">&nbsp;Green In You</span>&nbsp;?</h3>
+            <p style="padding-bottom: 2em;">You will receive support to fuel your professional development. You will own your creations. You will make an impact.</p>
+            <h3 class="title">Ways to join</h3>
+            <p>How do you want to contribute to our vision of creating a sustainable fashion community?</p>
         </div>
     </div>
-
-    <div class="slide">
-        <div class="row">
-            <div class="col-xs-12 col-lg-4" style="padding-top: 3em;">
-                <div class="img-shadow-team img-container" style=" height: 15em; width: 100%; background-color: #DCEBE2;">
-                </div>
-                <h4 style="font-family: Montserrat-SemiBold; padding-top: 2em;">Join the Executive Team</h4>
-                <p style="font-weight: 400;">Time commitment:</p>
-                <p>3 months per year (June, July & August)</p>
-                <p style="font-weight: 400;">What you’ll get:</p>
-                <p>Leadership experience</p>
-                <p>Certificate & Recommendations</p>
-                <p>Stipend</p>
+    
+    <div class="row">
+        <div class="col-sm-12 col-md-4 text-center" style="padding-top: 3em;">
+            <div class="img-shadow-team img-container join-team">
             </div>
-        
-            <div class="col-xs-12 col-lg-4" style="padding-top: 3em;">
-                <div class="img-shadow-team img-container" style=" height: 15em; width: 100%; background-color: #DCEBE2;">
-                </div>
-                <h4 style="font-family: Montserrat-SemiBold; padding-top: 2em;">Join the Executive Team</h4>
-                <p style="font-weight: 400;">Time commitment:</p>
+            <div class="join-team-text">
+                <h4 class="team-h4">Join the Executive Team</h4>
+                <p style="color:black">Time commitment:</p>
+                <p>3 months per year (June, July & August)
+                <p style="color:black">What you’ll get:</p>
+                <p>Leadership experience
+                <br>Certificate & Recommendations
+                <br>Stipend</p>
+            </div>
+        </div>
+    
+        <div class="col-sm-12 col-md-4 text-center" style="padding-top: 3em;">
+            <div class="img-shadow-team img-container join-team">
+            </div>
+            <div class="join-team-text">
+                <h4 class="team-h4">Become A Volunteer</h4>
+                <p style="color:black">Time commitment:</p>
                 <p>1 month per year (August)</p>
-                <p style="font-weight: 400;">What you’ll get:</p>
-                <p>Professional work experience</p>
-                <p>Certificate & Recommendations</p>
+                <p style="color:black">What you’ll get:</p>
+                <p>Professional work experience
+                <br>Certificate & Recommendations</p>
             </div>
-        
-        
-            <div class="col-xs-12 col-lg-4" style="padding-top: 3em;">
-                <div class="img-shadow-team img-container" style=" height: 15em; width: 100%; background-color: #DCEBE2;">
-                </div>
-                <h4 style="font-family: Montserrat-SemiBold; padding-top: 2em;">Collaborate with us</h4>
-                <p style="font-weight: 400;">Think we might be able to work together? We would love to consider collaborating with you!
+        </div>
+    
+        <div class="col-sm-12 col-md-4 text-center" style="padding-top: 3em;">
+            <div class="img-shadow-team img-container join-team">
+            </div>
+            <div class="join-team-text">
+                <h4 class="team-h4">Collaborate with us</h4>
+                <p>Think we might be able to work together?<br> We would love to consider collaborating with you!
                 </p>
             </div>
         </div>
     </div>
-
-    <div class="slide">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2 class="text-center team-p" style="font-size: 28px;">How To Join</h2>
-                <h3 class="text-center team-p2" style="font-size: 25px;">Interested in joining the Green Team? We’d love to have you onboard!</h3>
-                <h3 class="text-center team-p2" style="font-size: 25px;">Email us and let us know you’re interested. Make sure to specify whether you’d like to join the Executive Team,
-                volunteer, or collaborate with us! We’ll get back to you as soon as possible with more information about our positions.</h3>
-                <div class="text-center" style="padding-top: 2em;">
-                    <a href='/contact'>
-                        <button type="button" class="btn-green" style="border-radius: 0; color: white;">CONTACT US</button>
-                    </a>
-                </div>
+    
+    <div class="row" style="padding-top: 10em;">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+            <h2 class="title">How To Join</h2>
+            <p>Interested in joining the Green Team? We’d love to have you onboard!</p>
+            <p>Email us and let us know you’re interested. Make sure to specify whether you’d like to join the Executive Team,
+            volunteer, or collaborate with us! We’ll get back to you as soon as possible with more information about our positions.</p>
+            <div class="text-center" style="padding-top: 2em;">
+                <a href='/contact'>
+                    <button type="button" class="btn-green" style="border-radius: 0; color: white;">CONTACT US</button>
+                </a>
             </div>
         </div>
     </div>
 
-    <div class="slide">
-        <div class="row" style="width: 100%;" >
-            <div class="col-lg-6 col-lg-offset-3 col-xs-12">
-                <div class="img-shadow-right-team team-greenbox">
-                    <h1 class="text-center" style="color: white; font-weight: 500;">OWN YOUR CREATIONS.</h1>
-                    <h1 class="text-center" style="color: white; font-weight: 500;">MAKE AN IMPACT.</h1>
-                </div>
+    <div class="row" style="width: 100%; padding-top: 10em;" >
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+            <div class="img-shadow-right-team team-greenbox text-center">
+                <h1 style="color: white; font-weight: 500;">OWN YOUR CREATIONS.</h1>
+                <h1 style="color: white; font-weight: 500;">MAKE AN IMPACT.</h1>
             </div>
         </div>
     </div>
     
-    <div class="slide">
-        <div class="row" style="padding-top: 5em;">
-            <div style="padding-left: 2em; padding-right: 2em; padding-bottom: 5em;">
-                <h2 class="text-center team-p" style="font-size: 2em;">THE GREEN TEAM</h2>
-                <h3 class="text-center team-p2" style="font-size: 2em;">Just want to say hi and a little more!</h3>
-            </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center" style="padding-top: 10em;">
+            <h2 class="title">THE <span class="title" style="color: #A1BFAD;">&nbsp;GREEN</span>&nbsp;TEAM</h2>
+            <h3 class="title">Just want to say hi and a little more!</h3>
+        </div>
+    </div>
+    
+    <div class="row" style="padding-top: 5em;">
 
-            <div class="col-xs-12 col-lg-4" style="padding-top: 3em;">   
-                <div class="img-shadow-team-positions img-container team-positions-greenbox">
-                </div>
-            
-                <h4 style="padding-top: 2em;">John Smith</h4>
-                <p style="font-weight: 400;">Position</p>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>   
+        <div class="col-sm-12 col-md-4" style="padding-top: 3em;">
+            <div class="img-shadow-team img-container team-positions">
             </div>
-
-            <div class="col-xs-12 col-lg-4" style="padding-top: 3em;">
-                <div class="img-shadow-team-positions img-container team-positions-greenbox">
-                </div>
-            
-                <h4 style="padding-top: 2em;">John Smith</h4>
-                <p style="font-weight: 400;">Position</p>
+            <div class="team-positions-text">
+                <h4 class="team-h4">John Smith</h4>
+                <p style="color:black">Position</p>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
             </div>
+        </div>
 
-            <div class="col-xs-12 col-lg-4" style="padding-top: 3em;">
-                <div class="img-shadow-team-positions img-container team-positions-greenbox">
-                </div>
-            
-                <h4 style="padding-top: 2em;">John Smith</h4>
-                <p style="font-weight: 400;">Position</p>
+        <div class="col-sm-12 col-md-4" style="padding-top: 3em;">
+            <div class="img-shadow-team img-container team-positions">
+            </div>
+            <div class="team-positions-text">
+                <h4 class="team-h4">John Smith</h4>
+                <p style="color:black">Position</p>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4" style="padding-top: 3em;">
+            <div class="img-shadow-team img-container team-positions">
+            </div>
+            <div class="team-positions-text">
+                <h4 class="team-h4">John Smith</h4>
+                <p style="color:black">Position</p>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
             </div>
         </div>
     </div>
+    
+    <div class="row" style="padding-top: 5em;">
+        <div class="col-sm-12 col-md-4" style="padding-top: 3em;">
+            <div class="img-shadow-team img-container team-positions">
+            </div>
+            <div class="team-positions-text">
+                <h4 class="team-h4">John Smith</h4>
+                <p style="color:black">Position</p>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+            </div>
+        </div>
 
-    <div class="slide">
-        <div class="row" style="padding-top: 5em; padding-bottom: 5em;">
-            <div class="col-xs-12 col-lg-4" style="padding-top: 3em;">
-                <div class="img-shadow-team-positions img-container team-positions-greenbox">
-                </div>
-            
-                <h4 style="padding-top: 2em;">John Smith</h4>
-                <p style="font-weight: 400;">Position</p>
+        <div class="col-sm-12 col-md-4" style="padding-top: 3em;">
+            <div class="img-shadow-team img-container team-positions">
+            </div>
+            <div class="team-positions-text">
+                <h4 class="team-h4">John Smith</h4>
+                <p style="color:black">Position</p>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
             </div>
-            <div class="col-xs-12 col-lg-4" style="padding-top: 3em;">
-                <div class="img-shadow-team-positions img-container team-positions-greenbox">
-                </div>
-            
-                <h4 style="padding-top: 2em;">John Smith</h4>
-                <p style="font-weight: 400;">Position</p>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        </div>
+
+        <div class="col-sm-12 col-md-4" style="padding-top: 3em;">
+            <div class="img-shadow-team img-container team-positions">
             </div>
-            <div class="col-xs-12 col-lg-4" style="padding-top: 3em;">
-                <div class="img-shadow-team-positions img-container team-positions-greenbox">
-                </div>
-            
-                <h4 style="padding-top: 2em;">John Smith</h4>
-                <p style="font-weight: 400;">Position</p>
+            <div class="team-positions-text">
+                <h4 class="team-h4">John Smith</h4>
+                <p style="color:black">Position</p>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
             </div>
         </div>
     </div>
+    
 </div>
     <div class="row" style="padding-bottom: 5em; padding-top: 5em;">
-    <div class="col-lg-4 col-lg-offset-1 col-xs-12" style="padding-bottom: 2em;">
+    <div class="col-md-4 col-md-offset-1 col-xs-12 col-sm-8 col-sm-offset-2 lg-left-p text-center" style="padding-bottom: 2em; padding-top: 2em;">
         <p class="footer-p"> Subscribe to our mailing list</p>
         <p class="footer-p"> Be the first to get notified about our sales, workshops, locations of our collection camps, and more! You're on your way to a greener you.</p>
     </div>
-    <div class="col-lg-2 col-xs-12" style="padding-bottom: 2em;">
-        <h3 class="footer-p" style="padding-bottom: 1em">Follow us on</h3>
-        <a href='/contact' style="padding-right: 10px;">
-            <img src="/assets/img/facebook.png" alt="Facebook" class="footer-icon">
+    
+    <div class="col-md-2 col-md-offset-1 col-sm-12 col-xs-12 col-sm-8 col-sm-offset-2 lg-left-p text-center" style="padding-bottom: 2em;">
+        <h3 class="title" style="padding-bottom: 0em;" >Follow us on</h3>
+        <a href='https://www.facebook.com/GreenInYou/' style="padding-right: 10px;">
+            <img src="/assets/img/footer_logos/facebook.png" alt="Facebook" class="footer-icon">
         </a>
         <a href='https://www.instagram.com/greeninyou/' style="padding-right: 10px;">
-            <img src="/assets/img/instagram.png" alt="Instagram" class="footer-icon">
+            <img src="/assets/img/footer_logos/instagram.png" alt="Instagram" class="footer-icon">
         </a>
-        <a href='/contact' style="padding-right: 10px;">
-            <img src="/assets/img/linkedin.png" alt="Linkedin" class="footer-icon">
+        <a href='https://www.linkedin.com/company/green-in-you/' style="padding-right: 10px;">
+            <img src="/assets/img/footer_logos/linkedin.png" alt="Linkedin" class="footer-icon">
         </a>
-        <a href="mailto:greeninyougiy@gmail.com" >
-            <p class="footer-p" style="font-weight: 500;padding-top: 1em;"> contact@greeninyou.com</p>
+        <a href="mailto:contact@greeninyou.in" >
+            <p class="footer-p" style="font-weight: 500;padding-top: 1em;">contact@greeninyou.in</p>
         </a>
     </div>
+
     <div class="row">
-        <div class="col-lg-2 col-xs-6 ">
-            <h3 class="footer-p" style="padding-bottom: 1em">Help</h3>
-            <p class="footer-p">FAQ</p>
-            <p class="footer-p">Career</p>
-            <p class="footer-p">Privacy Policy</p>
-            <p class="footer-p">Terms & Conditions</p>
-        </div>
-        <div class="col-lg-2 col-xs-6">
-            <h3 class="footer-p" style="padding-bottom: 1em">Connect</h3>
+        <div class="col-md-2 col-md-offset-1 col-xs-12 col-sm-8 col-sm-offset-2 lg-left-p text-center">
+            <h3 class="title" style="padding-bottom: 0em;">Connect</h3>
             <a href='/contact'>
                 <p class="footer-p">Contact Us</p>
             </a>

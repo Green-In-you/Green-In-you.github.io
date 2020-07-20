@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <title>Green In You</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,14 +39,14 @@
 </head>
 <body>
     <header class="header-bg" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.50), rgba( 
-                  0, 0, 0, 0)), url(/assets/img/blog_header_cmp.jpg);">
+                  0, 0, 0, 0)), url(/assets/img/headers/blog_header_sm.jpg);">
     <div class="container-fluid">
     <nav class="navbar-default navbar-static-top">
     
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header ">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1">
+                data-target="#bs-example-navbar-collapse-1" onclick="openNav()">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -55,15 +55,15 @@
 
             <div style="padding-left: 5em;">
                 <a href="/">
-                    <img alt="Qries" src="/assets/img/giy-logo/Asset%208@2x.png" width="100px">
+                    <img alt="Qries" src="/assets/img/giy-logo/Asset%208@2x.png" width="70px">
                 </a>
             </div>
             
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right text-center">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
                 
                     
                         <li><a href="/about/" id="notactive">ABOUT</a></li>
@@ -88,26 +88,72 @@
             </ul>
         </div>
         <!-- /.navbar-collapse -->
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="nav navbar-nav navbar-right text-center">
+                
+                    <li><a href="/" id="notactive">HOME</a></li>
+                
+                
+                    
+                        <li><a href="/about/" id="notactive">ABOUT</a></li>
+                    
+                
+                    
+                        <li><a href="/gallery/" id="notactive">GALLERY</a></li>
+                    
+                
+                    
+                        <li><a href="/team/" id="notactive">TEAM</a></li>
+                    
+                
+                    
+                        <li><a href="/blog/" id="active">BLOG</a></li>
+                    
+                
+                    
+                        <li><a href="/contact/" id="notactive">CONTACT</a></li>
+                    
+                
+            </ul>
+        </div>
     </nav>
+
+    <script>
+        function openNav() {
+            if (document.getElementById("mySidenav").style.width != "250px") {
+                document.getElementById("mySidenav").style.width = "250px";
+            } else {
+                closeNav();
+            }
+
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0px";
+        }
+    </script>
     <!-- /.container-fluid -->
 </div>
     <div class="header-content">
             <div class="header-content-inner">
                 
-                <h1 style="font-family: BetterTogether;">Blogs</h1>
-                <p style="font-family: Montserrat-Bold; font-size: 30px;"></p>
+                    <h1 style="font-family: Prata-Regular">Blogs</h1>
+                    <p style="font-family: Prata-Regular"></p>
                 
             </div>
     </div>
 </header>
-    <div class="container-fluid" style="padding-left: 2em; padding-right: 2em">
+    <div class="container-fluid" style="padding:6em 2em 0em 2em;">
     
     
 
-    <div class="col-lg-8 col-lg-offset-2">
-        <div style=" padding-bottom: 2em; padding-top: 2em;">
+    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <div style="padding-bottom: 2em; padding-top: 2em;">
             <div>
-                <h2><a href="/sustainability/2020/05/20/times-have-changed-so-should-we.html">Times have changed, so should we</a></h2>
+                <h3 class="title" style="padding-bottom: 0px;"><a href="/posts/2020-05-20-times-have-changed-so-should-we">Times have changed, so should we</a></h3>
+                <p style="color: black;">20 May 2020 | By Tanisha Ghorpade</p>
                 <div style="overflow: hidden; max-height: 12em; line-height: 2em;">
                     <p>I’ve observed second-hand clothing is still visualized as ragged, dirty clothing. This image may have been true in the past when apparel was purchased by the customer and then disposed after rigorous use.</p>
 
@@ -123,10 +169,11 @@
     
     
 
-    <div class="col-lg-8 col-lg-offset-2">
-        <div style=" padding-bottom: 2em; padding-top: 2em;">
+    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <div style="padding-bottom: 2em; padding-top: 2em;">
             <div>
-                <h2><a href="/sustainability/2020/04/19/when-the-impossible-becomes-possible.html">When the impossible becomes possible</a></h2>
+                <h3 class="title" style="padding-bottom: 0px;"><a href="/posts/2020-04-19-when-the-impossible-becomes-possible">When the impossible becomes possible</a></h3>
+                <p style="color: black;">19 April 2020 | By Tanisha Ghorpade</p>
                 <div style="overflow: hidden; max-height: 12em; line-height: 2em;">
                     <p>It was 1907, and synthetic plastic was invented. However, it was only later until the
 1930s during the industrial era that plastic was commercially, widely available. I think
@@ -146,57 +193,33 @@ plastic.</p>
     
     
     
-    
-
-    <div class="col-lg-8 col-lg-offset-2">
-        <div style=" padding-bottom: 2em; padding-top: 2em;">
-            <div>
-                <h2><a href="/jekyll/update/2020/03/19/welcome-to-jekyll.html">Welcome to Jekyll!</a></h2>
-                <div style="overflow: hidden; max-height: 12em; line-height: 2em;">
-                    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    
-    
-    
-    
 
 </div>
     <div class="row" style="padding-bottom: 5em; padding-top: 5em;">
-    <div class="col-lg-4 col-lg-offset-1 col-xs-12" style="padding-bottom: 2em;">
+    <div class="col-md-4 col-md-offset-1 col-xs-12 col-sm-8 col-sm-offset-2 lg-left-p text-center" style="padding-bottom: 2em; padding-top: 2em;">
         <p class="footer-p"> Subscribe to our mailing list</p>
         <p class="footer-p"> Be the first to get notified about our sales, workshops, locations of our collection camps, and more! You're on your way to a greener you.</p>
     </div>
-    <div class="col-lg-2 col-xs-12" style="padding-bottom: 2em;">
-        <h3 class="footer-p" style="padding-bottom: 1em">Follow us on</h3>
-        <a href='/contact' style="padding-right: 10px;">
-            <img src="/assets/img/facebook.png" alt="Facebook" class="footer-icon">
+    
+    <div class="col-md-2 col-md-offset-1 col-sm-12 col-xs-12 col-sm-8 col-sm-offset-2 lg-left-p text-center" style="padding-bottom: 2em;">
+        <h3 class="title" style="padding-bottom: 0em;" >Follow us on</h3>
+        <a href='https://www.facebook.com/GreenInYou/' style="padding-right: 10px;">
+            <img src="/assets/img/footer_logos/facebook.png" alt="Facebook" class="footer-icon">
         </a>
         <a href='https://www.instagram.com/greeninyou/' style="padding-right: 10px;">
-            <img src="/assets/img/instagram.png" alt="Instagram" class="footer-icon">
+            <img src="/assets/img/footer_logos/instagram.png" alt="Instagram" class="footer-icon">
         </a>
-        <a href='/contact' style="padding-right: 10px;">
-            <img src="/assets/img/linkedin.png" alt="Linkedin" class="footer-icon">
+        <a href='https://www.linkedin.com/company/green-in-you/' style="padding-right: 10px;">
+            <img src="/assets/img/footer_logos/linkedin.png" alt="Linkedin" class="footer-icon">
         </a>
-        <a href="mailto:greeninyougiy@gmail.com" >
-            <p class="footer-p" style="font-weight: 500;padding-top: 1em;"> contact@greeninyou.com</p>
+        <a href="mailto:contact@greeninyou.in" >
+            <p class="footer-p" style="font-weight: 500;padding-top: 1em;">contact@greeninyou.in</p>
         </a>
     </div>
+
     <div class="row">
-        <div class="col-lg-2 col-xs-6 ">
-            <h3 class="footer-p" style="padding-bottom: 1em">Help</h3>
-            <p class="footer-p">FAQ</p>
-            <p class="footer-p">Career</p>
-            <p class="footer-p">Privacy Policy</p>
-            <p class="footer-p">Terms & Conditions</p>
-        </div>
-        <div class="col-lg-2 col-xs-6">
-            <h3 class="footer-p" style="padding-bottom: 1em">Connect</h3>
+        <div class="col-md-2 col-md-offset-1 col-xs-12 col-sm-8 col-sm-offset-2 lg-left-p text-center">
+            <h3 class="title" style="padding-bottom: 0em;">Connect</h3>
             <a href='/contact'>
                 <p class="footer-p">Contact Us</p>
             </a>
