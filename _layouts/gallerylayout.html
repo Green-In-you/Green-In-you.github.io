@@ -7,10 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--<link rel="stylesheet" href={{ "../assets/css/bootstrap.min.css" | relative_url }} type="text/css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-    <link rel="stylesheet" href="/_sass/_gallery.scss">
+    <link rel="stylesheet" href={{"/assets/css/baguetteBox.min.css"}}>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href={{ "../assets/css/main.css" | relative_url }}>
@@ -37,14 +36,9 @@
     {% include footer.html %}
     {% include scripts.html %}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script src={{"/assets/js/baguetteBox.min.js" | relative_url}}></script>
     <script>
         baguetteBox.run('.tz-gallery');
-    </script>
-    <script>
-        $('#topheader nav tabs-left sideways a').on('click', function () {
-            $('#topheader nav tabs-left sideways').find('li.active').removeClass('active');
-            $(this).parent('li').addClass('active');
     </script>
 </body>
 
