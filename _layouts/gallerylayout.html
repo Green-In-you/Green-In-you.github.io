@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="stylesheet" href={{ "../assets/css/bootstrap.min.css" | relative_url }} type="text/css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href={{"/assets/css/baguetteBox.min.css"}}>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href={{ "../assets/css/main.css" | relative_url }}>
+    <style>
+        .btn:after {
+            font-family: "Glyphicons Halflings";
+            content: "\e114";
+            float: right;
+            margin-left: 60px;
+        }
+
+        /* Icon when the collapsible content is hidden */
+        .btn.collapsed:after {
+            content: "\e080";
+        }
+    </style>
+
+
+</head>
+
+<body>
+    {% include navbar.html navbartype="navbar-default navbar-blogpost" %}
+    {{content}}
+    {% include footer.html %}
+    {% include scripts.html %}
+
+    <script src={{"/assets/js/baguetteBox.min.js" | relative_url}}></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+</body>
+
+</html>

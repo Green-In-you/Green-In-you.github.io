@@ -235,11 +235,6 @@ a:hover {
     .blogpost-title {
       font-size: 64px; } }
 
-.contact-header {
-  height: auto;
-  background-repeat: no-repeat;
-  background-attachment: scroll; }
-
 header {
   position: relative;
   width: 100%;
@@ -325,6 +320,11 @@ header {
   height: 50px;
   margin-bottom: 3em; }
 
+.contact-header {
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: scroll; }
+
 .btn-green {
   padding-left: 15px;
   padding-right: 15px;
@@ -338,6 +338,7 @@ header {
   height: 50px;
   width: 150px; }
 
+/* Override bootstrap column paddings */
 .gallery-container h1 {
   text-align: center;
   margin-top: 50px;
@@ -352,6 +353,8 @@ header {
 .tz-gallery {
   padding: 40px; }
   .tz-gallery .row > div {
+    padding: 2px; }
+  .tz-gallery .column > div {
     padding: 2px; }
   .tz-gallery .lightbox img {
     width: 100%;
