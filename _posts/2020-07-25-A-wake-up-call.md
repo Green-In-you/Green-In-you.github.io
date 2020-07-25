@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: posts
 title: 'A personal story, a wake up call, a call to action'
 date: 2020-07-14T00:00:00.000Z
