@@ -5,8 +5,7 @@ title: 'A personal story, a wake up call, a call to action'
 date: 2020-07-14T00:00:00.000Z
 categories: sustainability
 author: Tanisha Ghorpade
-imglink: >-
-  https://drive.google.com/file/d/19-dSLC7Nn2V4kILfjGv8D7-S_MjMraqg/view?usp=drivesdk
+imglink: 'https://drive.google.com/file/d/19-dSLC7Nn2V4kILfjGv8D7-S_MjMraqg/view'
 ---
 I hadn’t a clue who I was. And, like many others, I've always felt a desperation to know and be more of myself. When the world came to a staggering halt this year, I witnessed some clarity. The pandemic had me live alone in a five bedroom apartment – no roommates, let alone very many people to spare in our student town. So every morning I’d head to a trail nearby. Within the stream which ran parallel to it, there were three rocks. The third rock, also the biggest, also right in the middle of the stream, was my literal sweet spot. There I sat for an hour everyday in the midst of nature. On the canopy of trees overhead, several times I’d spot the most gorgeous birds. So many intriguing insects everywhere and sometimes, they’d even crawl up onto me, chase me – yes, I got chased by a big, fat bumble bee! There were days when I got lucky, and deer, foxes, groundhogs, would sneak up on me. The stream’s babbling was tranquilizing. I felt one with everything around me, I felt utterly included. For the first time in my life, I experienced the presence of a safe space to be myself, because every being around me too – the trees, the birds, the animals, the insects – were also just being their true selves. They were awake and alert, they seemed truly alive. 
 
