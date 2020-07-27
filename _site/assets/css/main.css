@@ -22,7 +22,9 @@
 html,
 body {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  line-height: 24px;
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
 
 .container-fluid {
   min-width: 360px; }
@@ -31,14 +33,15 @@ body {
   margin-left: 0px;
   margin-right: 0px; }
 
-body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
-
 p {
   font-size: 16px;
   color: #707070;
   font-family: Chivo-Regular;
   margin-bottom: 16px; }
+
+@media (min-width: 768px) {
+  .logo {
+    padding-left: 5em; } }
 
 .green-h3 {
   color: #A1BFAD;
@@ -49,6 +52,23 @@ p {
   font-weight: 400;
   color: #707070;
   padding-top: 15px; }
+
+.preloved {
+  font-size: 90px;
+  color: #A1BFAD;
+  font-family: BetterTogether;
+  padding-bottom: 50px; }
+
+.donate {
+  height: 12em;
+  width: 8em;
+  object-fit: contain; }
+
+.insta-embed {
+  padding: 0em 0em 2em 0em; }
+  @media (min-width: 992px) {
+    .insta-embed {
+      padding: 1em 1em 1em 1em; } }
 
 .join-team {
   margin: auto;
@@ -64,16 +84,38 @@ p {
 
 .team-positions {
   margin: auto;
-  height: 12em;
-  width: 75%;
-  max-width: 18em;
-  background-color: #A1BFAD; }
+  max-height: 24em;
+  width: 70%;
+  background-color: #A1BFAD;
+  overflow: hidden; }
+  @media (min-width: 992px) {
+    .team-positions {
+      width: 75%;
+      max-height: 16em; } }
+
+.team-positions img {
+  width: 100%; }
 
 .team-positions-text {
   margin: auto;
-  width: 75%;
-  max-width: 18em; }
+  width: 90%;
+  max-width: 24em; }
+  @media (min-width: 992px) {
+    .team-positions-text {
+      width: 75%; } }
 
+@media (min-width: 768px) {
+  .team-one {
+    margin-top: -150px; }
+
+  .team-two {
+    margin-top: -70px; }
+
+  .team-three {
+    margin-top: -50px; }
+
+  .team-four {
+    margin-top: -90px; } }
 .team-h4 {
   font-family: Montserrat-SemiBold;
   padding-top: 2em; }
@@ -159,7 +201,12 @@ p {
   .sidenav a {
     font-size: 18px; } }
 .navbar-toggle {
-  background-color: #ddd; }
+  background-color: #ddd;
+  position: absolute;
+  right: 1em; }
+
+.navbar-right {
+  margin-right: 0px; }
 
 .navbar-default {
   background-color: transparent;
@@ -291,8 +338,9 @@ header {
 .title {
   font-family: Prata-Regular;
   font-size: 32px;
-  color: #4B4B4B;
-  padding-bottom: 1em; }
+  color: #386C5F;
+  padding-bottom: 1em;
+  line-height: 48px; }
 
 .section-heading-letterspaced {
   font-family: Montserrat-Bold;
@@ -330,7 +378,7 @@ header {
   padding-right: 15px;
   border-radius: 0;
   border-color: transparent;
-  background-color: #A1BFAD;
+  background-color: #386C5F;
   color: white;
   letter-spacing: 1px;
   font-family: Montserrat-Bold;
@@ -411,6 +459,11 @@ header {
 @media (min-width: 992px) {
   .image-container {
     padding-top: 2em; } }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .img-responsive {
   max-height: 30em;

@@ -2,6 +2,8 @@ html,
 body {
     height: 100%;
     width: 100%;
+    line-height: 24px;
+    @include serif-font;
 }
 
 .container-fluid {
@@ -13,15 +15,17 @@ body {
     margin-right: 0px;
 }
 
-body {
-    @include serif-font;
-}
-
 p {
     font-size:16px;
     color:#707070;
     font-family: Chivo-Regular;
     margin-bottom: 16px;
+}
+
+.logo {
+    @media (min-width: 768px) {
+        padding-left: 5em;
+    }
 }
 
 .green-h3 {
@@ -34,6 +38,28 @@ p {
     font-weight:400;
     color:#707070;
     padding-top: 15px;
+}
+
+//Homepage
+.preloved {
+    font-size: 90px;
+    color: #A1BFAD;
+    font-family: BetterTogether;
+    padding-bottom: 50px;
+}
+
+.donate {
+    height: 12em;
+    width: 8em;
+    object-fit: contain;
+}
+
+//Instagram
+.insta-embed {
+    padding: 0em 0em 2em 0em;
+    @media (min-width: 992px) {
+        padding: 1em 1em 1em 1em;
+    }
 }
 
 //Team
@@ -54,16 +80,44 @@ p {
 
 .team-positions {
     margin: auto;
-    height: 12em;
-    width: 75%;
-    max-width: 18em;
+    max-height: 24em;
+    width: 70%;
     background-color: #A1BFAD;
+    overflow: hidden;
+    @media (min-width: 992px) {
+        width: 75%;
+        max-height: 16em;
+    }
+}
+
+.team-positions img {
+    width: 100%;
 }
 
 .team-positions-text {
     margin: auto;
-    width: 75%;
-    max-width: 18em;
+    width: 90%;
+    max-width: 24em;
+    @media (min-width: 992px) {
+        width: 75%;
+        //max-height: 16em;
+    }
+}
+
+//custom team image cropping
+@media (min-width: 768px) {
+    .team-one {
+        margin-top: -150px;
+    }
+    .team-two {
+        margin-top: -70px;
+    }
+    .team-three {
+        margin-top: -50px;
+    }
+    .team-four {
+        margin-top: -90px;
+    }
 }
 
 .team-h4 {
@@ -158,7 +212,14 @@ p {
 
 .navbar-toggle{
     background-color: #ddd;
+    position: absolute;
+    right: 1em;
 }
+
+.navbar-right{
+    margin-right: 0px;
+}
+
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -171,7 +232,7 @@ p {
                 font-weight: 700;
                 font-size: 22px;
                 &:hover {
-                    color: $theme-green;
+                    color: $theme-light-green;
                 }
             }
 
@@ -180,14 +241,14 @@ p {
     .nav > li > a#notactive {
             color: $theme-primary;
             &:hover {
-                color: $theme-green;
+                color: $theme-light-green;
             }
         }
 
     .nav > li > a#active {
-            color: $theme-green;
+            color: $theme-light-green;
             &:hover {
-                color: $theme-green;
+                color: $theme-light-green;
             }
         }
     @media (min-width: 992px) {
@@ -204,7 +265,7 @@ p {
         .nav > li > a:focus {
             padding-right: 2em;
             &:hover {
-                color: $theme-green;
+                color: $theme-light-green;
             }
         }
         &.affix {
@@ -234,7 +295,7 @@ p {
         .nav > li > a#notactive {
             color: $theme-dark;
             &:hover {
-                color: $theme-green;
+                color: $theme-light-green;
             }
         }
     }
@@ -242,12 +303,12 @@ p {
 
 //Blog
 a {
-    color: $theme-green;
+    color: $theme-light-green;
 }
 
 a:hover {
     text-decoration: none;
-    color: $theme-green;
+    color: $theme-light-green;
 }
 
 .blog-p {
@@ -257,7 +318,7 @@ a:hover {
 
 .blogpost-title {
     font-family: Prata-Regular;
-    color: #A1BFAD;
+    color: $theme-light-green;
     font-size: 32px;
     @media (min-width: 768px) {
         font-size: 64px;
@@ -334,8 +395,9 @@ header {
 .title {
     font-family: Prata-Regular;
     font-size: 32px;
-    color:#4B4B4B;
+    color: $theme-green;
     padding-bottom: 1em;
+    line-height: 48px;
 }
 
 .section-heading-letterspaced {
@@ -383,7 +445,7 @@ header {
     padding-right: 15px;
     border-radius: 0;
     border-color: transparent;
-    background-color:#A1BFAD;
+    background-color:#386C5F;//#A1BFAD
     color: white;
     letter-spacing: 1px;
     font-family: Montserrat-Bold;
@@ -492,6 +554,12 @@ header {
     @media (min-width: 992px) { //desktop
         padding-top: 2em;
     }
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-responsive {
