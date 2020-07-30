@@ -299,15 +299,15 @@ header {
     padding: 100px 15px 100px;
     width: 100%; }
     header .header-content .header-content-inner h1 {
-      font-weight: 700;
-      margin-top: 0;
-      margin-bottom: 0; }
-    header .header-content .header-content-inner hr {
-      margin: 30px auto; }
-    header .header-content .header-content-inner p {
-      font-weight: 300;
+      font-family: Prata-Regular;
+      font-size: 72px;
       color: white;
-      font-size: 16px; }
+      margin-bottom: 0.67em; }
+    header .header-content .header-content-inner p {
+      font-family: Prata-Regular;
+      font-size: 16px;
+      color: white;
+      line-height: 32px; }
   @media (min-width: 768px) {
     header {
       min-height: 100vh; }
@@ -323,10 +323,7 @@ header {
           margin-left: auto;
           margin-right: auto; }
           header .header-content .header-content-inner p {
-            font-size: 18px;
-            max-width: 80%;
-            margin-left: auto;
-            margin-right: auto; } }
+            font-size: 32px; } }
 
 .section-heading {
   font-family: Montserrat-Bold;

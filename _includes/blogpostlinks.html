@@ -1,0 +1,15 @@
+{% for post in site.posts %}
+    {% unless post.id == page.id %}
+        <div style="padding-bottom: 2em; padding-top: 2em;">
+            <div>
+                <h3 class="title" style="padding-bottom: 0px;"><a href="{{ post.url }}"
+                        style="text-decoration: underline;">{{ post.title }}</a></h3>
+                <p style="color: black;">{{ post.date | date: "%-d %B %Y" }} | By {{post.author}}</p>
+                <div style="overflow: hidden; max-height: 12em; line-height: 2em;">
+                    {{ post.excerpt }}
+                </div>
+                <p> <a href="{{ post.url }}" style="text-decoration: underline;">Read More</a> </p>
+            </div>
+        </div>
+    {% endunless %}
+{% endfor %}
