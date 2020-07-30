@@ -107,7 +107,7 @@ p {
 //custom team image cropping
 @media (min-width: 768px) {
     .team-one {
-        margin-top: -150px;
+        margin-top: -120px;
     }
     .team-two {
         margin-top: -70px;
@@ -320,6 +320,7 @@ a:hover {
     font-family: Prata-Regular;
     color: $theme-light-green;
     font-size: 32px;
+    line-height: 96px;
     @media (min-width: 768px) {
         font-size: 64px;
     }

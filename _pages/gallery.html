@@ -5,8 +5,25 @@ permalink: /gallery/
 ---
 
 <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-    <div class="tz-gallery">  
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center" style="padding-bottom: 5em;">
+    <div class="tz-gallery"> 
+        
+        <!-- Buy Secondhand, Inherit A Story -->
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center"
+            style="padding-bottom: 5em;">
+            <h1 class="blogpost-title">Buy Secondhand, Inherit A Story</h1>
+        </div>
+        {% for image in site.static_files %}
+            {% if image.path contains 'img/gallery/Buy Secondhand, Inherit A Story' %}
+                <div class="col-md-4 col-sm-6 col-xs-12" style="padding-bottom: 1em; padding-top: 1em;">
+                    <a class="lightbox" href="{{ image.path | relative_url}} ">
+                        <img class="img-responsive thumbnail" src="{{ image.path | relative_url}}" style="object-fit: contain;">
+                    </a>
+                </div>
+            {% endif %}
+        {% endfor %}
+
+        <!-- Season one event -->
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center" style="padding-top: 10em; padding-bottom: 5em;">
             <h1 class="blogpost-title">Season One</h1>
         </div>
         {% for image in site.static_files %}
@@ -18,6 +35,8 @@ permalink: /gallery/
                 </div>
             {% endif %}
         {% endfor %}
+
+        <!-- Season one collection -->
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center" style="padding-top: 10em; padding-bottom: 5em;">
             <h1 class="blogpost-title">Season One Collection</h1>
         </div>
