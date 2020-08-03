@@ -2,14 +2,18 @@
                   0, 0, 0, 0)), url({{ page.headerurl | relative_url }});">
     {% include navbar.html navbartype="navbar-default" %}
     <div class="header-content">
-            <div class="header-content-inner">
-                {% if page.pbeforeh3 == true %}
-                    <p>{{page.headerptext}}</p>
-                    <h1>{{page.headerh3text}}</h1>
-                {% else %}
-                    <h1>{{page.headerh3text}}</h1>
-                    <p>{{page.headerptext}}</p>
-                {% endif %}
-            </div>
+        <div class="header-content-inner">
+            {% if page.pbeforeh3 == true %}
+                <p>{{page.headerptext}}</p>
+                <h1>{{page.headerh3text}}</h1>
+            {% else %}
+                <h1>{{page.headerh3text}}</h1>
+                <p>{{page.headerptext}}</p>
+            {% endif %}
+        </div>
     </div>
+    <div class="header-arrow">
+        <img style="width: 28px;" src="{{'assets/img/headers/Group 10.png ' | relative_url}}">
+    </div>
+    
 </header>

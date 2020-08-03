@@ -22,6 +22,12 @@ p {
     margin-bottom: 16px;
 }
 
+ul {
+    @media (max-width: 768px) {
+        padding-left: 1em;
+    }
+}
+
 .logo {
     @media (min-width: 768px) {
         padding-left: 5em;
@@ -66,10 +72,9 @@ p {
 
 .join-team {
     margin: auto;
-    height: 12em;
-    width: 75%;
-    max-width: 18em;
-    background-color: #A1BFAD;
+    width: 6em;
+    height: 6em;
+    object-fit: contain;
 }
 
 .join-team-text {
@@ -117,6 +122,9 @@ p {
     }
     .team-four {
         margin-top: -90px;
+    }
+    .team-five {
+        margin-top: -30px;
     }
 }
 
@@ -210,14 +218,30 @@ p {
   .sidenav a {font-size: 18px;}
 }
 
-.navbar-toggle{
-    background-color: #ddd;
+.navbar-toggle {
+    position: absolute;
+    float: none;
+    left: 3em;
+}
+
+.navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
     position: absolute;
     right: 1em;
+    border-color: #ddd;
+    
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ddd;
 }
 
 .navbar-right{
     margin-right: 0px;
+}
+
+.navbar-header {
+    text-align: center;
 }
 
 .navbar-default {
@@ -255,6 +279,7 @@ p {
         background-color: transparent;
         border-color: transparent;
         .navbar-header .navbar-brand {
+            text-align: center;
             color: rgba(white, .7);
             &:hover,
             &:focus {
@@ -320,9 +345,10 @@ a:hover {
     font-family: Prata-Regular;
     color: $theme-light-green;
     font-size: 32px;
-    line-height: 96px;
+    line-height: 48px;
     @media (min-width: 768px) {
         font-size: 64px;
+        line-height: 96px;
     }
 }
 
@@ -332,7 +358,7 @@ a:hover {
 header {
     position: relative;
     width: 100%;
-    min-height: 70vh;
+    min-height: 95vh;
     @include background-cover;
     background-position: center;
     //background-image: url('../img/header.png');
@@ -341,7 +367,7 @@ header {
     .header-content {
         position: relative;
         text-align: center;
-        padding: 100px 15px 100px;
+        padding: 10em 1em 10em;
         width: 100%;
         .header-content-inner {
             h1 {
@@ -371,12 +397,22 @@ header {
                 max-width: 1000px;
                 margin-left: auto;
                 margin-right: auto;
+                h1 {
+                    font-size: 72px;
+                }
                 p {
                     font-size: 32px; 
                 }
             }
         }
     }
+}
+
+.header-arrow {
+    bottom: 2em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 
 // Sections
@@ -559,7 +595,7 @@ header {
 }
 
 .img-responsive {
-    max-height:30em;
+    max-height:32em;
     margin: auto;
 }
 

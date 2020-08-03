@@ -12,7 +12,12 @@
             </button>
 
             <a class="logo" href="{{'../' | relative_url }}">
-                <img src="{{'../assets/img/giy-logo/Asset 8@2x.png' | relative_url }}" width="70px">
+                {% if include.navbartype contains 'navbar-blogpost' %}
+                    <img src="{{'../assets/img/giy-logo/blacklogo.png' | relative_url }}" width="70px">
+                {% else %}
+                    <img src="{{'../assets/img/giy-logo/Asset 8@2x.png' | relative_url }}" width="70px">
+                {% endif %}
+                
             </a>
         </div>
 

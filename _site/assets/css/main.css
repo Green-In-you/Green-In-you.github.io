@@ -39,6 +39,10 @@ p {
   font-family: Chivo-Regular;
   margin-bottom: 16px; }
 
+@media (max-width: 768px) {
+  ul {
+    padding-left: 1em; } }
+
 @media (min-width: 768px) {
   .logo {
     padding-left: 5em; } }
@@ -72,10 +76,9 @@ p {
 
 .join-team {
   margin: auto;
-  height: 12em;
-  width: 75%;
-  max-width: 18em;
-  background-color: #A1BFAD; }
+  width: 6em;
+  height: 6em;
+  object-fit: contain; }
 
 .join-team-text {
   margin: auto;
@@ -115,7 +118,10 @@ p {
     margin-top: -50px; }
 
   .team-four {
-    margin-top: -90px; } }
+    margin-top: -90px; }
+
+  .team-five {
+    margin-top: -30px; } }
 .team-h4 {
   font-family: Montserrat-SemiBold;
   padding-top: 2em; }
@@ -201,12 +207,24 @@ p {
   .sidenav a {
     font-size: 18px; } }
 .navbar-toggle {
-  background-color: #ddd;
   position: absolute;
-  right: 1em; }
+  float: none;
+  left: 3em; }
+
+.navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+  position: absolute;
+  right: 1em;
+  border-color: #ddd; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ddd; }
 
 .navbar-right {
   margin-right: 0px; }
+
+.navbar-header {
+  text-align: center; }
 
 .navbar-default {
   background-color: transparent;
@@ -233,6 +251,7 @@ p {
       background-color: transparent;
       border-color: transparent; }
       .navbar-default .navbar-header .navbar-brand {
+        text-align: center;
         color: rgba(255, 255, 255, 0.7); }
         .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
           color: white; }
@@ -277,15 +296,16 @@ a:hover {
   font-family: Prata-Regular;
   color: #A1BFAD;
   font-size: 32px;
-  line-height: 96px; }
+  line-height: 48px; }
   @media (min-width: 768px) {
     .blogpost-title {
-      font-size: 64px; } }
+      font-size: 64px;
+      line-height: 96px; } }
 
 header {
   position: relative;
   width: 100%;
-  min-height: 70vh;
+  min-height: 95vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -296,7 +316,7 @@ header {
   header .header-content {
     position: relative;
     text-align: center;
-    padding: 100px 15px 100px;
+    padding: 10em 1em 10em;
     width: 100%; }
     header .header-content .header-content-inner h1 {
       font-family: Prata-Regular;
@@ -322,8 +342,16 @@ header {
           max-width: 1000px;
           margin-left: auto;
           margin-right: auto; }
+          header .header-content .header-content-inner h1 {
+            font-size: 72px; }
           header .header-content .header-content-inner p {
             font-size: 32px; } }
+
+.header-arrow {
+  bottom: 2em;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
 
 .section-heading {
   font-family: Montserrat-Bold;
@@ -462,7 +490,7 @@ header {
   align-items: center; }
 
 .img-responsive {
-  max-height: 30em;
+  max-height: 32em;
   margin: auto; }
 
 .img-shadow-left {
