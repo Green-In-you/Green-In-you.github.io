@@ -46,6 +46,13 @@ ul {
     padding-top: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+  .xs-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 //Homepage
 .preloved {
     font-size: 90px;
