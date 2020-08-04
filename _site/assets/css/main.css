@@ -57,7 +57,7 @@ p {
   color: #707070;
   padding-top: 15px; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .xs-column-reverse {
     display: flex;
     flex-direction: column-reverse; } }
@@ -143,7 +143,7 @@ p {
   width: 320px;
   background-color: #DCEBE2; }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .lg-left-p {
     text-align: left; } }
 
@@ -481,10 +481,10 @@ header {
   text-shadow: none;
   background: #4B4B4B; }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .image-container {
     padding-top: 6em; } }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .image-container {
     padding-top: 2em; } }
 
